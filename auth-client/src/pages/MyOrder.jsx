@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cardContext'
 import { useUserContext } from '../../context/userContext'
 import axios from 'axios'
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const MyOrder = () => {
     const { cartItems, removeItem, addToCart } = useCartContext()
     const { user, setUser } = useUserContext()
@@ -13,7 +13,7 @@ const MyOrder = () => {
 
         try {
 
-            const res = await axios.post(`http://localhost:8000/api/v1/order/getorder`, {
+            const res = await axios.post(`${baseUrl}/api/v1/order/getorder`, {
                 userId: user?.user._id,
                 token: localStorage.getItem("token")
 

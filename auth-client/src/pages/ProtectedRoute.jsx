@@ -3,14 +3,14 @@ import { useUserContext } from '../../context/userContext'
 import axios from 'axios'
 import {Navigate} from 'react-router-dom'
 
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 
 export default function ProtectedRoute({ children }) {
     const { user, setUser } = useUserContext()
     const getUser = async () => {
         try {
             const res = await axios.post(
-                "http://localhost:8000/api/v1/user/get-user", {
+                `${baseUrl}/api/v1/user/get-user`, {
                 token: localStorage.getItem("token")
             }, {
                 headers: {

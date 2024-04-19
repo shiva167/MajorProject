@@ -5,7 +5,7 @@ import axios from 'axios'
 import { FaHeart, FaStar } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cardContext.jsx'
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Menu = () => {
   
   const { Food, setFood } = useFoodContext()
@@ -60,7 +60,7 @@ const Menu = () => {
   // const params = useParams()
   const getFoods = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/api/v1/food/getAllFoods?category=${value}`)
+      const res = await axios.get(`${baseUrl}/api/v1/food/getAllFoods?category=${value}`)
       if (res.data.success) {
         setFood(res.data.data.food)
       }

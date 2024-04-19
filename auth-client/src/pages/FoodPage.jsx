@@ -7,13 +7,13 @@ import PageNavigation from '../component/PageNavigation'
 import { AiOutlineMinus } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
 
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const FoodPage = () => {
 	const params = useParams()
 	const [foodDetails, setFoodDetails] = useState([])
 	const getFoodDetails = async () => {
 		try {
-			const res = await axios.get(`http://localhost:8000/api/v1/food/getFood/${params.id}`)
+			const res = await axios.get(`${baseUrl}/api/v1/food/getFood/${params.id}`)
 			if (res.data.success) {
 				setFoodDetails(res.data.data.food)
 			}

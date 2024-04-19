@@ -160,6 +160,7 @@ const loginController = async (req, res) => {
 const verifyOtpController = async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
+    console.log(user);
     if (user.otp === req.body.combineOtp) {
       user.isVerified = true;
       await user.save();

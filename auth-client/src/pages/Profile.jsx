@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
 import { useUserContext } from '../../context/userContext';
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Profile = () => {
     const [image, setImage] = useState({})
 
@@ -20,7 +20,7 @@ const Profile = () => {
         formData.append('image', file)
         setUploading(true)
         try {
-            const { data } = await axios.post('http://localhost:8000/api/v1/all/upload-image', formData)
+            const { data } = await axios.post(`${baseUrl}/api/v1/all/upload-image`, formData)
             setUploading(false)
             setImage({
                 url: data.url,

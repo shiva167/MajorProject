@@ -4,14 +4,14 @@ import { FaHeart, FaStar } from 'react-icons/fa'
 import { useFoodContext } from '../../context/foodContext'
 import axios from 'axios'
 import Foods from './Foods'
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const NewFoods = () => {
  const [newfood, setNewFood] = useState([])
  const { Food, setFood } = useFoodContext()
 
  const getFoods = async () => {
   try {
-   const res = await axios.get(`http://localhost:8000/api/v1/food/getNewFoods`)
+   const res = await axios.get(`${baseUrl}/api/v1/food/getNewFoods`)
    if (res.data.success) {
     setNewFood(res.data.data.food)
    }

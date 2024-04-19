@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
 import logo from "../../assets/logo.svg";
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Addfood = () => {
 	const [image, setImage] = useState({})
 	const [uploading, setUploading] = useState(false)
@@ -15,7 +15,7 @@ const Addfood = () => {
 		formData.append('image', file)
 		setUploading(true)
 		try {
-			const { data } = await axios.post('http://localhost:8000/api/v1/all/upload-image', formData)
+			const { data } = await axios.post(`${baseUrl}/api/v1/all/upload-image`, formData)
 			setUploading(false)
 			setImage({
 				url: data.url,

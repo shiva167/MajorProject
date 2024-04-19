@@ -3,6 +3,7 @@ import { Link, NavLink,useNavigate } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 
 const Login = () => {
 
@@ -17,7 +18,7 @@ const handleOnSubmit = (e) => {
   const userData = {
      email, password
   };
-   fetch('http://localhost:8000/api/v1/user/login', {
+   fetch(`${baseUrl}/api/v1/user/login`, {
     method: "POST",
     headers: {
       "content-type": "application/json"

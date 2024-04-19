@@ -6,7 +6,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Register = () => {
 
   const [image, setImage] = useState({})
@@ -18,7 +18,7 @@ const Register = () => {
     formData.append('image', file)
     setUploading(true)
     try {
-      const { data } = await axios.post('http://localhost:8000/api/v1/all/upload-image', formData)
+      const { data } = await axios.post(`${baseUrl}/api/v1/all/upload-image`, formData)
       setUploading(false)
       setImage({
         url: data.url,

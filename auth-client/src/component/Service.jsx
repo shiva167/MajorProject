@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink,useNavigate } from "react-router-dom";
 import chef from "../assets/chef.png";
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Service = () => {
   return (
     <div className='py-3 px-10 sm:px-4 md:px-6 lg:px-6'>

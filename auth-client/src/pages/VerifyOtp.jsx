@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 
 const VerifyOtp = () => {
  const [otp, setOtp] = useState(['', '', '', '', '', ''])
@@ -22,28 +22,30 @@ const VerifyOtp = () => {
   e.preventDefault()
   const email = user?.user?.email
   const dataOtp = { email, combineOtp };
-
-  fetch('http://localhost:8000/api/v1/user/verifyotp', {
-   method: "POST",
-   headers: {
-    "content-type": "application/json"
-   },
-   body: JSON.stringify(dataOtp)
+  console.log(dataOtp)
+  console.log("Verification Mark 1 ")
+  fetch(`${baseUrl}/api/v1/user/verifyotp`, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json"
+    },
+    body: JSON.stringify(dataOtp)
   })
-   .then(res => res.json())
-   .then(data => {
+  .then(res => res.json())
+  .then(data => {
+    console.log("Verification Mark 2 ")
     if (data.success) {
-
-     toast.success(data.message)
-     
-     navigate("/home");
+      
+      
+      toast.success(data.message)
+      navigate("/home");
       location.reload()
     } else {
-     toast.error(data.message)
-
+      toast.error(data.message)
+      
     }
-   });
- }
+  });
+}
  //2.09.19 UI check 
  // 2.09.23 Much changed
  return (
