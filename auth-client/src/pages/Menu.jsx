@@ -20,13 +20,13 @@ const Menu = () => {
     },
     {
       id: 1,
-      name: 'Rice',
-      value: 'Rice',
+      name: 'Rice/Biryani',
+      value: 'Rice/Biryani',
     },
     {
       id: 2,
-      name: 'Desert',
-      value: 'Desert'
+      name: 'Momos',
+      value: 'Momos'
     },
     {
       id: 3,
@@ -35,18 +35,58 @@ const Menu = () => {
     },
     {
       id: 4,
-      name: 'Fruits',
-      value: 'Fruits'
+      name: 'IceCreams',
+      value: 'IceCreams'
     },
     {
       id: 5,
-      name: 'Chicken',
-      value: 'Chicken'
+      name: 'Non-Veg',
+      value: 'Non-Veg'
     },
     {
       id: 6,
-      name: 'Fish',
-      value: 'Fish'
+      name: 'Starter',
+      value: 'Starter'
+    },
+    {
+      id:7,
+      name: 'Pizza',
+      value: 'Pizza'
+    },
+    {
+      id:8,
+      name: 'Sweets',
+      value: 'Sweets'
+    },
+    {
+      id:9,
+      name: 'Lunch',
+      value: 'Lunch'
+    },
+    {
+      id:10,
+      name: 'Main Course',
+      value: 'Main Course'
+    },
+    {
+      id:11,
+      name: 'Chineese',
+      value: 'Chineese'
+    },
+    {
+      id:12,
+      name: 'South Indian',
+      value: 'South Indian'
+    },
+    {
+      id:13,
+      name: 'Tiffin Services',
+      value: 'Tiffin Services'
+    },
+    {
+      id:14,
+      name: 'Bakery',
+      value: 'Bakery'
     },
 
   ]
