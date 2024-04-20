@@ -19,7 +19,8 @@ const Footer = () => {
   <nav>
     <header className="footer-title text-xl text-[#f54748]">Company</header> 
     <a href="/team" className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
+    <a href='/contact' className="link link-hover">Contact</a>
+    <a href='/blog' className="link link-hover">Blog</a>
   </nav> 
   <nav>
     <header className="footer-title text-xl text-[#f54748]">Legal</header> 

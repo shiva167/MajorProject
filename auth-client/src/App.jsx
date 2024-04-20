@@ -16,6 +16,7 @@ import Menu from './pages/Menu'
 import FoodPage from './pages/FoodPage'
 import Profile from './pages/Profile'
 import Our from './pages/Our'
+import Contact from './pages/Contact'
 
 
 import { Elements } from "@stripe/react-stripe-js";
@@ -23,9 +24,11 @@ import { loadStripe } from "@stripe/stripe-js";
 import ViewCart from './pages/ViewCart'
 import Success from './pages/Success'
 import Cancel from './pages/Cancel'
+import Blog from './pages/Blog'
 import Order from './pages/Order'
 import MyOrder from './pages/MyOrder'
 import AllOrder from './pages/admin/AllOrder'
+
 
 
 
@@ -53,6 +56,8 @@ function App() {
         <Route path='/addfood' element={<ProtectedRoute><Addfood /></ProtectedRoute>} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/profile' element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+        <Route path='/blog' element={<Blog/>} />
+        <Route path='/contact' element={<Contact/>} />
         <Route path='/menu/:id' element={<FoodPage />} />
         <Route path='/viewcart' element={<ProtectedRoute><ViewCart /></ProtectedRoute>} />
         <Route path='/success' element={<ProtectedRoute><Success /></ProtectedRoute>} />
