@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../assets/logo.svg";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -18,9 +19,9 @@ const Footer = () => {
   </nav> 
   <nav>
     <header className="footer-title text-xl text-[#f54748]">Company</header> 
-    <a href="/team" className="link link-hover">About us</a>
-    <a href='/contact' className="link link-hover">Contact</a>
-    <a href='/blog' className="link link-hover">Blog</a>
+    <Link to="/team" className="link link-hover">About us</Link>
+    <Link to='/contact' className="link link-hover">Contact</Link>
+    <Link to='/blog' className="link link-hover">Blog</Link>
   </nav> 
   <nav>
     <header className="footer-title text-xl text-[#f54748]">Legal</header> 
