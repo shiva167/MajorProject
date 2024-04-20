@@ -41,15 +41,16 @@ const Navbar = () => {
       </Link>
 
       <div className="lg:flex hidden gap-8 items-center">
-       <a href="/home" className='text-[#191919] text-xl font-medium hover:text-red-500'>Today's Special</a>
+       <a href="/home" className='text-[#191919] text-xl font-medium hover:text-red-500'>Home</a>
        <Link to="/my-order" className='text-[#191919] text-xl font-medium hover:text-red-500'>My Order</Link>
        <Link to="/menu" className='text-[#191919] text-xl font-medium hover:text-red-500'>Our Menu</Link>
        {
         user?.user?.role === 'admin' && <Link to="/addfood" className='text-[#191919] text-xl font-medium hover:text-red-500'>Add food</Link>
        }
 
-       <a href="/home" className='text-[#191919] text-xl font-medium hover:text-red-500'>Popular food</a>
-       <a href="/team" className='text-[#191919] text-xl font-medium hover:text-red-500'>About Us</a>
+       <Link to="/blog" className='text-[#191919] text-xl font-medium hover:text-red-500'>Blogs</Link>
+       <Link to="/team" className='text-[#191919] text-xl font-medium hover:text-red-500'>About Us</Link>
+       <Link to="/contact" className='text-[#191919] text-xl font-medium hover:text-red-500'>Contact Us</Link>
 
        <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -129,12 +130,12 @@ hover:text-red-500">My Order</Link>
 
       <div className={`lg:hidden absolute w-1/2 sm:w-2/5 h-screen px-4 py-2 text-xl font-medium ease-in shadow-sm backdrop-blur-md bg-white/80 top-0 duration-500 ${nav ? "right-0" : "right-[-100%]"} pt-24`}>
        <div className="flex flex-col gap-8 ">
-        <a href="/" className='text-[#191919] text-base font-medium hover:text-red-500'>Today's Special</a>
-        <a href="" className='text-[#191919] text-base font-medium hover:text-red-500'>Why TasteTracker</a>
-        <a href="" className='text-[#191919] text-base font-medium hover:text-red-500'>Our Menu</a>
-        <a href="" className='text-[#191919] text-base font-medium hover:text-red-500'>Add food</a>
-        <a href="" className='text-[#191919] text-base font-medium hover:text-red-500'>Popular food</a>
-        <a href="/team" className='text-[#191919] text-base font-medium hover:text-red-500'>About Us</a>
+        <a href="/" className='text-[#191919] text-base font-medium hover:text-red-500'>Home</a>
+        
+        <Link to="/menu" className='text-[#191919] text-base font-medium hover:text-red-500'>Our Menu</Link>
+        <Link to="/blog" className='text-[#191919] text-base font-medium hover:text-red-500'>Blogs</Link>
+        <Link to="/team" className='text-[#191919] text-base font-medium hover:text-red-500'>About Us</Link>
+        <Link to="/contact" className='text-[#191919] text-base font-medium hover:text-red-500'>Contact Us</Link>
 
 
         <button className="bg-[#F54748] active:scale-90 transition duration-100 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white">Login</button>
