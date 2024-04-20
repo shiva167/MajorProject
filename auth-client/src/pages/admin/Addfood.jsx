@@ -99,11 +99,21 @@ cursor-pointer" />
 
 					<select className="select select-md w-full max-w-xs bg-red-500 text-white" name='category'>
 						<option disabled selected>Select Food Category</option>
-						<option>Rice</option>
-						<option>Desert</option>
+						<option>Rice/Biryani</option>
+						<option>Momos</option>
 						<option>Drinks</option>
-						<option>Fruits</option>
-						<option>Chicken</option>
+						<option>IceCreams</option>
+						<option>Non-Veg</option>
+						<option>Starter</option>
+						<option>Pizza</option>
+						<option>Sweets</option>
+						<option>Lunch</option>
+						<option>Main Course</option>
+						<option>Chineese</option>
+						<option>South Indian</option>
+						<option>Tiffin Services</option>
+						<option>Bakery</option>
+
 					</select>
 
 					<input
