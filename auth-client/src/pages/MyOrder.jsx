@@ -100,7 +100,7 @@ const CartFood = ({ food }) => {
                         food?.items?.map((item) => <>
                             <div className="flex flex-col justify-between ml-4 flex-grow">
                                 <div>
-                                    <img src={item?.food.foodImage} alt="" className="h-20" />
+                                    <img src={item?.food?.foodImage} alt="abs" className="h-20" />
                                 </div>
                                 <span className="font-bold text-sm">
                                     {item?.food?.name}
@@ -118,7 +118,7 @@ const CartFood = ({ food }) => {
                 </div>
                 <div className="flex flex-col justify-between ml-4 flex-grow">
                     <span className="font-bold text-sm">
-                        {food.name}
+                        {food?.name}
                     </span>
                     <span className="flex items-center space-x-4">
                         {/* <div className="shadow-sm text-white bg-red-500 hover:bg-red-700 cursor-pointer p-4
