@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cardContext'
 import { useUserContext } from '../../context/userContext'
 import axios from 'axios'
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+
 const MyOrder = () => {
     const { cartItems, removeItem, addToCart } = useCartContext()
     const { user, setUser } = useUserContext()
@@ -13,7 +13,7 @@ const MyOrder = () => {
 
         try {
 
-            const res = await axios.post(`${baseUrl}/api/v1/order/getorder`, {
+            const res = await axios.post(`http://localhost:8000/api/v1/order/getorder`, {
                 userId: user?.user._id,
                 token: localStorage.getItem("token")
 
@@ -100,7 +100,7 @@ const CartFood = ({ food }) => {
                         food?.items?.map((item) => <>
                             <div className="flex flex-col justify-between ml-4 flex-grow">
                                 <div>
-                                    <img src={item?.food?.foodImage} alt="abs" className="h-20" />
+                                    <img src={item?.food.foodImage} alt="" className="h-20" />
                                 </div>
                                 <span className="font-bold text-sm">
                                     {item?.food?.name}
@@ -118,7 +118,7 @@ const CartFood = ({ food }) => {
                 </div>
                 <div className="flex flex-col justify-between ml-4 flex-grow">
                     <span className="font-bold text-sm">
-                        {food?.name}
+                        {food.name}
                     </span>
                     <span className="flex items-center space-x-4">
                         {/* <div className="shadow-sm text-white bg-red-500 hover:bg-red-700 cursor-pointer p-4
