@@ -34,7 +34,7 @@ import AllOrder from './pages/admin/AllOrder'
 
 function App() {
   const [count, setCount] = useState(0)
-  const stripePromise = loadStripe( 'pk_test_51P5OvRSGyQ51TffDOcOpaNoyDFqEFGc6G9u7RcJcdUKLFLv6GjPoBLnMWw5yjyTPuIv1GLNpuJQtztxVE9jK5qnw00mGseimLe'
+  const stripePromise = loadStripe( 'pk_test_51P7yTaRqAafrtNLP6JMUvqmEwP4Qmdm7Mc3P3XaHAhE2bEPUfvZK13TUKzyJl1hz3ARNvcpm3C93EJTFiJdWGNiJ007ObybiI9'
 );
 
   return (

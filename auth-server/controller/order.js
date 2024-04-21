@@ -1,6 +1,6 @@
 const Order = require("../model/Order");
 const stripe = require("stripe")(
-  "sk_test_51P5OvRSGyQ51TffDifj4ZrhV88DaU6OzFKu78cpDkPnM6vr4LkQc0DmQt4b4pYBaqmP8yDkHqpy1h8T3pNGCbxH200Cu06XtXT"
+  "sk_test_51P7yTaRqAafrtNLPAmTME9fvvUrChxix5BPjk8Qp4dLE4E40RL9qilMwLVDJBAtc7VsT3y7b1uy8t61YfX7cM7xM00LEQvHH69"
 );
 
 const createOrder = async (req, res) => {
