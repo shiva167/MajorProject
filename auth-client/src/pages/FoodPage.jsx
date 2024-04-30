@@ -6,8 +6,8 @@ import axios from 'axios'
 import PageNavigation from '../component/PageNavigation'
 import { AiOutlineMinus } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
-const baseUrl = "http://localhost:8000";
-// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const FoodPage = () => {
 	const params = useParams()
 	const [foodDetails, setFoodDetails] = useState([])

@@ -115,7 +115,7 @@ import { useCartContext } from '../../context/cardContext';
 import { useUserContext } from '../../context/userContext';
 import { useStripe } from '@stripe/react-stripe-js';
 import axios from 'axios'
-
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Order = () => {
     const { cartItems, removeItem, addToCart } = useCartContext()
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty + c.price, 0)
@@ -136,7 +136,7 @@ const Order = () => {
                 food: item._id,
                 qty: item.qty
             }))
-            const res = await axios.post(`http://localhost:8000/api/v1/order/order`, {
+            const res = await axios.post(`${baseUrl}/api/v1/order/order`, {
                 user: user?.user._id,
                 items: orderItems,
                 totalAmount: totaPrice,

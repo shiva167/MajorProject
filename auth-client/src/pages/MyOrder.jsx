@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cardContext'
 import { useUserContext } from '../../context/userContext'
 import axios from 'axios'
-const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 const MyOrder = () => {
     const { cartItems, removeItem, addToCart } = useCartContext()
     const { user, setUser } = useUserContext()
