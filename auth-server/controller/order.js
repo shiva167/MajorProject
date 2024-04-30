@@ -4,7 +4,7 @@ const stripe = require("stripe")(
 "sk_test_51P5OvRSGyQ51TffDifj4ZrhV88DaU6OzFKu78cpDkPnM6vr4LkQc0DmQt4b4pYBaqmP8yDkHqpy1h8T3pNGCbxH200Cu06XtXT"
 );
 // process.env.STRIPE_SECRETKEY
-
+dotenv.config();
 const createOrder = async (req, res) => {
   try {
     const { user, items, totalAmount } = req.body;
@@ -23,8 +23,8 @@ const createOrder = async (req, res) => {
         },
       ],
       mode: "payment",
-      success_url: "http://localhost:5173/success",
-      cancel_url: "http://localhost:5173/cancel",
+      success_url: process.env.SUCCESS_URL ||"http://localhost:5173/success",
+      cancel_url: process.env.CANCEL_URL||"http://localhost:5173/cancel"
     });
 
     if (session.id) {
