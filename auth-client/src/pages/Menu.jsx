@@ -5,7 +5,8 @@ import axios from 'axios'
 import { FaHeart, FaStar } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cardContext.jsx'
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
 const Menu = () => {
   
   const { Food, setFood } = useFoodContext()
@@ -19,14 +20,14 @@ const Menu = () => {
       value: 'all',
     },
     {
-      id: 1,
-      name: 'Rice/Biryani',
-      value: 'Rice/Biryani',
+      id:1,
+      name: 'Bakery',
+      value: 'Bakery'
     },
     {
-      id: 2,
-      name: 'Momos',
-      value: 'Momos'
+      id:2,
+      name: 'Chineese',
+      value: 'Chineese'
     },
     {
       id: 3,
@@ -39,55 +40,56 @@ const Menu = () => {
       value: 'IceCreams'
     },
     {
-      id: 5,
-      name: 'Non-Veg',
-      value: 'Non-Veg'
-    },
-    {
-      id: 6,
-      name: 'Starter',
-      value: 'Starter'
-    },
-    {
-      id:7,
-      name: 'Pizza',
-      value: 'Pizza'
-    },
-    {
-      id:8,
-      name: 'Sweets',
-      value: 'Sweets'
-    },
-    {
-      id:9,
+      id:5,
       name: 'Lunch',
       value: 'Lunch'
     },
     {
-      id:10,
+      id:6,
       name: 'Main Course',
       value: 'Main Course'
     },
     {
-      id:11,
-      name: 'Chineese',
-      value: 'Chineese'
+      id: 7,
+      name: 'Momos',
+      value: 'Momos'
     },
     {
-      id:12,
+      id: 8,
+      name: 'Non-Veg',
+      value: 'Non-Veg'
+    },
+    {
+      id:9,
+      name: 'Pizza',
+      value: 'Pizza'
+    },
+    {
+      id: 10,
+      name: 'Rice/Biryani',
+      value: 'Rice/Biryani',
+    },
+    {
+      id:11,
       name: 'South Indian',
       value: 'South Indian'
     },
     {
+      id: 12,
+      name: 'Starter',
+      value: 'Starter'
+    },
+    {
       id:13,
-      name: 'Tiffin Services',
-      value: 'Tiffin Services'
+      name: 'Sweets',
+      value: 'Sweets'
     },
     {
       id:14,
-      name: 'Bakery',
-      value: 'Bakery'
+      name: 'Tiffin Services',
+      value: 'Tiffin Services'
     },
+    
 
   ]
   const handleBtn = (btn) => {

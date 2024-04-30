@@ -5,7 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
 import logo from "../../assets/logo.svg";
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
 const Addfood = () => {
 	const [image, setImage] = useState({})
 	const [uploading, setUploading] = useState(false)
@@ -41,10 +42,10 @@ const Addfood = () => {
 		const foodImage = image?.url
 		const foodData = {
 			name, price, foodImage, category,
-			location, description, weight
+			location, description
 		};
-		const res = await axios.post("http://localhost:8000/api/v1/food/addfood", { name, price, foodImage, category,
-		location, description, weight }, {
+		const res = await axios.post(`${baseUrl}/api/v1/food/addfood`, { name, price, foodImage, category,
+		location, description }, {
 			headers: {
 				Authorization: `Bearer ${localStorage.getItem("token")}`
 			}
@@ -115,7 +116,7 @@ cursor-pointer" />
 						<option>Bakery</option>
 
 					</select>
-
+{/* 
 					<input
 						type="number"
 						placeholder="Enter Weight"
@@ -123,14 +124,14 @@ cursor-pointer" />
 						className=" shadow-sm
           bg-white appearance-none border rounded w-full py-3 px-3  text-gray-700
           leading-tight focus:outline-none focus: shadow-outline"
-					/>
+					/> */}
 					<input
 						type="text"
 						placeholder="Enter Location"
 						name="location"
-						className=" shadow-sm
-          bg-white appearance-none border rounded w-full py-3 px-3  text-gray-700
-          leading-tight focus:outline-none focus: shadow-outline"
+						className=" textarea textarea-ghost shadow-sm
+						bg-white appearance-none border rounded w-full py-3 px-3 col-span-2 text-gray-700
+						leading-tight focus:outline-none focus: shadow-outline"
 					/>
 					<textarea className="textarea textarea-ghost shadow-sm
           bg-white appearance-none border rounded w-full py-3 px-3 col-span-2 text-gray-700

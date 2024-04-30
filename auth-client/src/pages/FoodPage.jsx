@@ -6,8 +6,8 @@ import axios from 'axios'
 import PageNavigation from '../component/PageNavigation'
 import { AiOutlineMinus } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
-
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const FoodPage = () => {
 	const params = useParams()
 	const [foodDetails, setFoodDetails] = useState([])
@@ -80,17 +80,17 @@ const FoodPage = () => {
 					</div>
 
 					<div className="grid lg:grid-cols-4 pb-14 md:grid-cols-2 grid-cols-2 gap-8">
+						<div className=" py-4 text-center text-white font-semibold">
+							{/* Weight: {foodDetails?.weight} kg */}
+						</div>
 						<div className="bg-[#f54748] py-4 text-center text-white font-semibold">
 							Category: {foodDetails?.category}
 						</div>
 						<div className="bg-[#f54748] py-4 text-center text-white font-semibold">
-							Weight: {foodDetails?.weight} kg
-						</div>
-						<div className="bg-[#f54748] py-4 text-center text-white font-semibold">
 							Location: Lucknow
 						</div>
-						<div className="bg-[#f54748] py-4 text-center text-white font-semibold">
-							Location: Lucknow
+						<div className=" py-4 text-center text-white font-semibold">
+							
 						</div>
 					</div>
 

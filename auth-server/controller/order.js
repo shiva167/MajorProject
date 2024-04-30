@@ -1,8 +1,9 @@
 const Order = require("../model/Order");
 const dotenv = require("dotenv");
 const stripe = require("stripe")(
-  process.env.STRIPE_SECRETKEY
+"sk_test_51P5OvRSGyQ51TffDifj4ZrhV88DaU6OzFKu78cpDkPnM6vr4LkQc0DmQt4b4pYBaqmP8yDkHqpy1h8T3pNGCbxH200Cu06XtXT"
 );
+// process.env.STRIPE_SECRETKEY
 
 const createOrder = async (req, res) => {
   try {

@@ -37,10 +37,10 @@ const foodSchema = new mongoose.Schema(
     category: {
       type: String,
       required: true,
-    },
-    weight: {
-      type: Number,
-      required: true,
+    // },
+    // weight: {
+    //   type: Number,
+    //   required: true,
     },
     reviews: [reviewSchema],
     foodImage: {

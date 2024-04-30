@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { FaPlay, FaSearch } from "react-icons/fa";
 import header from "../assets/orgbanner.png";
 
@@ -38,6 +39,8 @@ function Header() {
 
                     </div>
                     <img src={header} className='h-[28rem] mx-auto justify-end' alt="banner" />
+            
+            
                 </div>
             </div>
         </div>

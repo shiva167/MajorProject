@@ -3,7 +3,8 @@ import { useUserContext } from '../../../context/userContext';
 import { toast, ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
 const AllOrder = () => {
   const [order, getOrders] = useState([])
   const { user, setUser } = useUserContext()
@@ -159,7 +160,7 @@ const OrderFoods = ({ order }) => {
 hover:shadow-xl shadow-md rounded-full px-8 py-2 text-x1 font-medium Itext-white mx-auto
 text-center" 
 onClick={()=>
-  handleDelivered(order?._id)}>Delivered</button>
+  handleDelivered(order?._id)}>Deliverd</button>
       </div>
       <span className="text-center w-1/5 font-semibold text-sm">
         {order?.createdAt}

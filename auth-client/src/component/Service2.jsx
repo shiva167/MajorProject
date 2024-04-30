@@ -1,5 +1,5 @@
 import React from 'react'
-import chef2 from "../assets/chef2.png";
+// import chef2 from "../assets/chef2.png";
 
 
 const Service2 = () => {
@@ -20,9 +20,9 @@ const Service2 = () => {
                             <button className='bg-[#f54748] active:scale-90 transition duration-150 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white'>About us</button>
                         </div>
                     </div>
-                    <img src={chef2} alt="" className='h-[32rem] mx-auto justify-end' />
+                    {/* <img src={chef2} alt="" className='h-[32rem] mx-auto justify-end' /> */}
 
-
+ <div className="blob h-[32rem] mx-auto justify-end"></div>
                 </div>
 
             </div>

@@ -55,7 +55,7 @@ const Blog = () => {
             <div class="relative">
                 <a href="#">
                     <img class="w-full"
-                        src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                        src="https://c.ndtvimg.com/2023-02/egi0l8i_ice-cream_625x300_17_February_23.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350"
                         alt="Sunset in the mountains"/>
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
@@ -106,7 +106,7 @@ const Blog = () => {
             <div class="relative">
                 <a href="#">
                     <img class="w-full"
-                        src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                        src="https://images.unsplash.com/photo-1597403491447-3ab08f8e44dc?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Sunset in the mountains"/>
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
