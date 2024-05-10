@@ -9,7 +9,7 @@ const Service2 = () => {
                 <div className='grid grid-cols-1 relative lg:grid-cols-2 gap-8 items-center'>
                     <div className='w-full md:w-[32rem] flex flex-col space-y-6'>
                         <div className='text-2xl md:text-3xl font-bold text-[#2e2e2e] lg:text-4xl'>
-                            We are <span className='text-[#f54748]'>more</span> than <span className='text-[#fdc55e]'>
+                            We are <span className='text-blue-900 text-opacity-80'>more</span> than <span className='text-red-500 text-opacity-70'>
                                 multiple
                             </span> service
                         </div>
@@ -17,7 +17,7 @@ const Service2 = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum eum ipsa velit nobis placeat et sapiente hic repellendus aliquam?
                         </div>
                         <div className='flex gap-8 items-center'>
-                            <button className='bg-[#f54748] active:scale-90 transition duration-150 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white'>About us</button>
+                            <button className='bg-[#CF3032] bg-opacity-80 active:scale-90 transition duration-150 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white'>About us</button>
                         </div>
                     </div>
                     {/* <img src={chef2} alt="" className='h-[32rem] mx-auto justify-end' /> */}

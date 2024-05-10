@@ -69,9 +69,8 @@ const Register = () => {
 
   return (
     <div className="register">
-      <div className="w-full mx-auto pt-[16vh]">
-        <form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-white/80
-1g:w-max mx-auto flex flex-col  rounded-md px-8 py-5' onSubmit={handleOnSubmit}>
+      <div className="w-full mx-auto pt-[16vh] mb-2">
+        <form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-[#F7EDD0] lg:w-max mx-auto flex flex-col  rounded-md px-8 py-4' onSubmit={handleOnSubmit}>
           <label htmlFor='file-upload' className='custom-file-upload'>
             <img src={image?.url || avater} alt="" className="h-32 w-32 bg-contain rounded-full mx-auto
 cursor-pointer" />
@@ -129,14 +128,15 @@ shadow-sm bg-white appearance-none border rounded w-full py-2 px-3
 text-gray-700 leading-tight focus:outline-none focus: shadow-outline' />
             </div>
           </div>
-          <button
+          {/* <button
             className="bg-[#f54748] active:scale-90 transition duration-150 transform
       hover:shadow-xl shadow-md w-full rounded-full px-8 py-2 text-x1 font-medium text-white
       mx-auto text-center mb-3 mt-5"
             type="submit"
           >
             Register Now!
-          </button>
+          </button> */}
+<button      type="submit" class="text-white bg-gradient-to-r mt-2 w-full rounded-full bg-[#CF3032]  hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-sm px-5 py-2 text-center me-2 ">Register Now</button>
 
           <Link
             to="/login"

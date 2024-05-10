@@ -83,14 +83,14 @@ const CartFood = ({ food }) => {
             {food.name}
           </span>
           <span className="flex items-center space-x-4">
-            <div className="shadow-sm text-white bg-red-500 hover:bg-red-700 cursor-pointer p-4
+            <div className="shadow-sm text-white bg-[#CF3032] hover:bg-red-700 cursor-pointer p-4
 rounded-full relative" onClick={() => removeItem(food)}>
               <AiOutlineMinus size={20} className='absolute font-semibold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
             </div>
             <span className='text-red-500 px-3 py-2 bg-slate-100 text-lg font-medium'>
               {food.qty}
             </span>
-            <div className="shadow-sm text-white bg-red-500 hover:bg-red-700 cursor-pointer p-4
+            <div className="shadow-sm text-white bg-[#CF3032] hover:bg-red-700 cursor-pointer p-4
 rounded-full relative" onClick={() => addToCart(food)}>
               <AiOutlinePlus size={20} className='absolute font-semibold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
             </div>

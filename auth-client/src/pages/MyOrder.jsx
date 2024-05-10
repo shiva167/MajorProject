@@ -48,22 +48,22 @@ const MyOrder = () => {
                 <div className="container mx-auto py-6">
                     <div className="w-full bg-white px-10 py-5 text-black rounded-md">
                         <div className="flex justify-between border-b pb-8">
-                            <h1 className="font-semibold text-2xl">
+                            <h1 className="font-semibold text-2xl text-[#CF3032]">
                                 My food cart
                             </h1>
 
                         </div>
                         <div className="mt-10 flex mb-5">
-                            <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
+                            <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
                                 Food details
                             </h3>
-                            <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
+                            <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
                                 Category
                             </h3>
-                            <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
+                            <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
                                 Price
                             </h3>
-                            <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
+                            <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
                                 Total Price
                             </h3>
                         </div>

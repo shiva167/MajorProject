@@ -21,8 +21,8 @@ const Blog = () => {
 
 
 <section class="mt-16">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-red-500 dark:text-white">Write a Blog Post</h2>
+  <div class="py-8 lg:py-16 px-4 bg-[#F7EDD0] mx-auto max-w-screen-md">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#CF3032]  dark:text-white">Write a Blog Post</h2>
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue or Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
     
         <form class="space-y-8" action="https://fabform.io/f/{form-id}" method="post">
@@ -39,8 +39,11 @@ const Blog = () => {
               <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
           </div>
           {/* <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-danger-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button> */}
-          <button class="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Send</button>
-      </form>
+          <div class="flex justify-center items-center">
+
+          <button class="text-white bg-gradient-to-r  w-1/2 rounded-full bg-[#CF3032]   hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-sm px-5 py-2 text-center me-2">Submit</button>
+     
+     </div> </form>
   </div>
   
 </section>
@@ -48,8 +51,9 @@ const Blog = () => {
 
 
 <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
-        <div class="rounded overflow-hidden shadow-lg">
+<h2 class=" text-4xl tracking-tight font-extrabold text-left mb-5 mt-4 text-[#CF3032]  dark:text-white">The Latest News</h2>
+    <div class="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mb-4 gap-10">
+        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
 
             <a href="#"></a>
             <div class="relative">
@@ -63,50 +67,36 @@ const Blog = () => {
                 </a>
                 <a href="#!">
                     <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
+                        class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        Mixed Fruit IceCream
                     </div>
                 </a>
 
                 <a href="!#">
                     <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">27</span>
-                        <small>March</small>
+                        class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        <span class="font-bold">7</span>
+                        <small>Jan</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
 
                 <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    View in Newyork City</a>
-                <p class="text-gray-500 text-sm">
-                    The city that never sleeps
-                </p>
+                    class="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out">Beat the Heat with TasteTracker's Mixed Fruit Ice Cream! ☀️</a>
+                <p class="text-gray-500 text-sm mt-3">
+                Just had the Mixed Fruit Ice Cream at Taste Tracker and WOW!  Juicy chunks of strawberries, pineapple, and mango in creamy vanilla ice cream. Perfect summer treat - refreshing and delicious!  #HighlyRecommend #BeatTheHeat</p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
-			c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
-			c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">6 mins ago</span></span>
+      
             </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
+        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
             <a href="#"></a>
             <div class="relative">
                 <a href="#">
                     <img class="w-full"
-                        src="https://images.unsplash.com/photo-1597403491447-3ab08f8e44dc?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Sunset in the mountains"/>
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
@@ -114,52 +104,39 @@ const Blog = () => {
                 </a>
                 <a href="#!">
                     <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
+                        class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm  hover:text-[#CF3032] hover:bg-white transition duration-500 ease-in-out">
+                    Chocolate cake
                     </div>
                 </a>
 
-                <a href="!#">
+
+
+
+<a href="!#">
                     <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">20</span>
-                        <small>March</small>
+                        class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        <span class="font-bold">22</span>
+                        <small>Jan</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
 
                 <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    Pizza in Town</a>
-                <p class="text-gray-500 text-sm">
-                    The collection of best pizza images in Newyork city
-                </p>
+                    class="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out">Divine Chocolate Cake at Taste Tracker</a>
+                <p class="text-gray-500 text-sm mt-3">This cake is a chocoholic's dream! Rich, moist layers with a decadent frosting. Every bite is pure heaven. Don't skip dessert - you won't regret it! #WorthTheCalories #ChocolateDream #TasteTracker</p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#"
-                    class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">3 mins read</span></span>
+      
             </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
+        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
 
             <a href="#"></a>
             <div class="relative">
                 <a href="#">
                     <img class="w-full"
-                        src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                        src="https://images.unsplash.com/photo-1599307767316-776533bb941c?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Sunset in the mountains"/>
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
@@ -167,52 +144,38 @@ const Blog = () => {
                 </a>
                 <a href="#!">
                     <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
+                        class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        Grilled Meat
                     </div>
                 </a>
 
                 <a href="!#">
                     <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">15</span>
-                        <small>April</small>
+                        class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        <span class="font-bold">5</span>
+                        <small>Feb</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
 
                 <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    Salad Images ever</a>
+                    class="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out">Carnivore's Dream: The Grilled Flank Steak at Taste Tracker</a>
                 <p class="text-gray-500 text-sm">
-                    The collection of best salads of town in pictures
+Just had the grilled flank steak at Taste Tracker and WOW! Perfectly cooked, juicy on the inside and a beautiful char on the outside. The chimichurri sauce was the perfect finishing touch. Highly recommend for any grill fan! #SupportLocal #WorthTheHype
                 </p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#"
-                    class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">6 mins read</span></span>
+      
             </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
+        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
 
             <a href="#"></a>
             <div class="relative">
                 <a href="#">
                     <img class="w-full"
-                        src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                        src="https://c.ndtvimg.com/2024-02/e26pu9d_chicken-popcorn_625x300_26_February_24.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350"
                         alt="Sunset in the mountains"/>
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
@@ -220,50 +183,72 @@ const Blog = () => {
                 </a>
                 <a href="#!">
                     <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
+                        class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        Chicken Popcorn
                     </div>
                 </a>
 
                 <a href="!#">
                     <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">27</span>
-                        <small>March</small>
+                        class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        <span class="font-bold">18</span>
+                        <small>Mar</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
 
                 <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    View in Newyork City</a>
-                <p class="text-gray-500 text-sm">
-                    The city that never sleeps
-                </p>
+                    class="font-semibold text-lg inline-block hover:text-[#CF3032] mb-3 transition duration-500 ease-in-out"> Chicken Popcorn Perfection at TasteTracker</a>
+                <p class="text-gray-500 text-sm">Let's talk cravings. Taste Tracker's chicken popcorn is the ultimate cure! Crispy, juicy chicken in every bite, with the perfect amount of seasoning. Plus, their dipping sauces are next-level. My go-to order for a satisfying snack or appetizer. Don't miss out! #ChickenPopcornLove #TasteTracker </p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
-			c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
-			c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">6 mins ago</span></span>
-            </div>
+               </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
+        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+
+<a href="#"></a>
+<div class="relative">
+    <a href="#">
+        <img class="w-full"
+            src="https://images.unsplash.com/photo-1677844592730-ce9c936d8f1a?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Sunset in the mountains"/>
+        <div
+            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+        </div>
+    </a>
+    <a href="#!">
+        <div
+            class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+            Omlette
+        </div>
+    </a>
+
+    <a href="!#">
+        <div
+            class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+            <span class="font-bold">24</span>
+            <small>March</small>
+        </div>
+    </a>
+</div>
+<div class="px-6 py-4">
+
+    <a href="#"
+        class="font-semibold text-lg inline-block  hover:text-[#CF3032] transition duration-500 ease-in-out">Omlette Obsessed! Taste Tracker's Denver Omelette is a Must-Try!</a>
+    <p class="text-gray-500 text-sm mt-2">
+    Fluffy eggs, perfectly cooked ham and peppers, and melted cheese? Sign me up!  This omelette is the perfect balance of savory and satisfying. Can't wait to come back and try their other creations!  #OmletteLove #Taste Tracker
+    </p>
+</div>
+<div class="px-6 py-4 flex flex-row items-center">
+</div>
+</div> <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+
             <a href="#"></a>
             <div class="relative">
                 <a href="#">
                     <img class="w-full"
-                        src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                        src="https://c.ndtvimg.com/2021-11/ckqd18a_gulab-jamun_625x300_03_November_21.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350"
                         alt="Sunset in the mountains"/>
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
@@ -271,52 +256,35 @@ const Blog = () => {
                 </a>
                 <a href="#!">
                     <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
+                        class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        Gulab Jamun
                     </div>
                 </a>
 
                 <a href="!#">
                     <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">20</span>
-                        <small>March</small>
+                        class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        <span class="font-bold">2</span>
+                        <small>Apr</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
 
                 <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    Pizza in Town</a>
-                <p class="text-gray-500 text-sm">
-                    The collection of best pizza images in Newyork city
-                </p>
+                    class="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out">Sweet Dreams are Made of Gulab Jamuns at Taste Tracker</a>
+                <p class="text-gray-500 text-sm mt-2">
+                Just had the Gulab Jamuns at Taste Tracker and WOW! Fluffy, warm Jamuns bathed in a perfectly spiced cardamom syrup - pure bliss!  The best way to end a fantastic meal. Definitely try them! #GulabJamunLove #MustHaveDessert #TasteTracker</p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#"
-                    class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">3 mins read</span></span>
-            </div>
+               </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
-
+        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
             <a href="#"></a>
             <div class="relative">
                 <a href="#">
                     <img class="w-full"
-                        src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+                        src="https://images.unsplash.com/photo-1562059390-a761a084768e?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Sunset in the mountains"/>
                     <div
                         class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
@@ -324,202 +292,112 @@ const Blog = () => {
                 </a>
                 <a href="#!">
                     <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
+                        class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        Veg roll
                     </div>
                 </a>
 
-                <a href="!#">
+
+
+
+<a href="!#">
                     <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">15</span>
-                        <small>April</small>
+                        class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+                        <span class="font-bold">12</span>
+                        <small>Apr</small>
                     </div>
                 </a>
             </div>
             <div class="px-6 py-4">
 
                 <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    Salad Images ever</a>
+                    class="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out mb-3">Veg Roll Surprise!</a>
                 <p class="text-gray-500 text-sm">
-                    The collection of best salads of town in pictures
+                Obsessed with Veg Roll at Taste Tracker! The Spicy Rainbow roll was bursting with fresh flavors and the avocado tempura was pure perfection. Can't wait to try their other veggie creations! #VegRollFan #DeliciouslyHealthy
                 </p>
             </div>
             <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#"
-                    class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">6 mins read</span></span>
-            </div>
+                </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
+      
+        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
 
-            <a href="#"></a>
-            <div class="relative">
-                <a href="#">
-                    <img class="w-full"
-                        src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
-                        alt="Sunset in the mountains"/>
-                    <div
-                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                    </div>
-                </a>
-                <a href="#!">
-                    <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
-                    </div>
-                </a>
-
-                <a href="!#">
-                    <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">27</span>
-                        <small>March</small>
-                    </div>
-                </a>
-            </div>
-            <div class="px-6 py-4">
-
-                <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    View in Newyork City</a>
-                <p class="text-gray-500 text-sm">
-                    The city that never sleeps
-                </p>
-            </div>
-            <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#" class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
-			c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
-			c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">6 mins ago</span></span>
-            </div>
+<a href="#"></a>
+<div class="relative">
+    <a href="#">
+        <img class="w-full"
+            src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Sunset in the mountains"/>
+        <div
+            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
-            <a href="#"></a>
-            <div class="relative">
-                <a href="#">
-                    <img class="w-full"
-                        src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
-                        alt="Sunset in the mountains"/>
-                    <div
-                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                    </div>
-                </a>
-                <a href="#!">
-                    <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
-                    </div>
-                </a>
-
-                <a href="!#">
-                    <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">20</span>
-                        <small>March</small>
-                    </div>
-                </a>
-            </div>
-            <div class="px-6 py-4">
-
-                <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    Pizza in Town</a>
-                <p class="text-gray-500 text-sm">
-                    The collection of best pizza images in Newyork city
-                </p>
-            </div>
-            <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#"
-                    class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">3 mins read</span></span>
-            </div>
+    </a>
+    <a href="#!">
+        <div
+            class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+        Sandwich
         </div>
-        <div class="rounded overflow-hidden shadow-lg">
+    </a>
 
-            <a href="#"></a>
-            <div class="relative">
-                <a href="#">
-                    <img class="w-full"
-                        src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
-                        alt="Sunset in the mountains"/>
-                    <div
-                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-                    </div>
-                </a>
-                <a href="#!">
-                    <div
-                        class="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        Photos
-                    </div>
-                </a>
-
-                <a href="!#">
-                    <div
-                        class="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
-                        <span class="font-bold">15</span>
-                        <small>April</small>
-                    </div>
-                </a>
-            </div>
-            <div class="px-6 py-4">
-
-                <a href="#"
-                    class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Best
-                    Salad Images ever</a>
-                <p class="text-gray-500 text-sm">
-                    The collection of best salads of town in pictures
-                </p>
-            </div>
-            <div class="px-6 py-4 flex flex-row items-center">
-                <span href="#"
-                    class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center">
-                    <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style={{ enableBackground: 'new 0 0 512 512' }} xml:space="preserve">
-                        <g>
-                            <g>
-                                <path
-                                    d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="ml-1">6 mins read</span></span>
-            </div>
+    <a href="!#">
+        <div
+            class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+            <span class="font-bold">17</span>
+            <small>Apr</small>
         </div>
+    </a>
+</div>
+<div class="px-6 py-4">
+
+    <a href="#"
+        class="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out">Savor Every Bite: Taste Tracker's Sandwich Sensation!</a>
+    <p class="text-gray-500 text-sm mt-2">
+Indulged in the mouthwatering delight at Taste Tracker. The signature sandwich, a symphony of flavors! Crispy bacon, creamy avocado, and tangy aioli nestled between artisanal bread—pure perfection.   </p>
+</div>
+<div class="px-6 py-4 flex flex-row items-center">
+   </div>
+</div>
+<div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+<a href="#"></a>
+<div class="relative">
+    <a href="#">
+        <img class="w-full"
+            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=620&h=350&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Sunset in the mountains"/>
+        <div
+            class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+        </div>
+    </a>
+    <a href="#!">
+        <div
+            class="absolute bottom-0 left-0 bg-[#CF3032] px-4 py-2 text-white text-sm hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+            Samosa
+        </div>
+    </a>
+
+
+
+
+<a href="!#">
+        <div
+            class="text-sm absolute top-0 right-0 bg-[#CF3032] px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-[#CF3032] transition duration-500 ease-in-out">
+            <span class="font-bold">30</span>
+            <small>Apr</small>
+        </div>
+    </a>
+</div>
+<div class="px-6 py-4">
+
+    <a href="#"
+        class="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out">Samosa Perfection at Taste Tracker</a>
+    <p class="text-gray-500 text-sm mt-2">
+Just had the samosas at Taste Tracker and wow! The crust was flaky and light, and the filling was bursting with flavor. Perfect balance of spices and potatoes. Must-try for any samosa lover! #TasteTracker #SamosaLove
+    </p>
+</div>
+<div class="px-6 py-4 flex flex-row items-center">
+  </div>
+</div>
+
     </div>
 </div>
 </>

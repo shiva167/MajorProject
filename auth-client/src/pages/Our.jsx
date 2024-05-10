@@ -7,25 +7,25 @@ import img2 from '../assets/shikha.png'
 
 const Our = () => {
     return(
-<div className="mb-12  bg-gray-100 w-full">
-                <div className="container flex justify-center bg-gray-100 w-full mt-15">
-                    <h1 className="text-gray-500 pt-36 pl-16 text-3xl w-full  bg-gray-100 text-center ">  We 3</h1>
+<div className="mb-12  bg-white w-full">
+                <div className="container flex justify-center bg-white w-full mt-15">
+                    <h1 className="text-4xl pt-36 pl-16  mb-2 font-extrabold text-center text-[#CF3032]  dark:text-white ">  We 3</h1>
                     {/* <div>
                         <h1 className="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">The Talented People Behind the Scenes of the Organization</h1>
                     </div> */}
                 </div>
-                <div className="w-full bg-gray-100 px-10 pt-10">
+                <div className="w-full bg-white px-10 pt-10">
                     <div className="container mx-auto">
                         <div role="list" aria-label="Behind the scenes People " className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
                             <div role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                                <div className="rounded overflow-hidden shadow-md bg-white">
+                                <div className="rounded overflow-hidden shadow-md bg-[#F7EDD0]">
                                     <div className="absolute -mt-20 w-full flex justify-center">
                                         <div className="h-32 w-32">
                                             <img src={img11} alt="Display Picture of Andres Berlin" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                                         </div>
                                     </div>
                                     <div className="px-6 mt-16">
-                                        <h1 className="font-bold text-3xl text-center mb-1">Shaquib Hussain</h1>
+                                        <h1 className="font-bold text-3xl text-center mb-1 text-[#CF3032]">Shaquib Hussain</h1>
                                         <p className="text-gray-800 text-sm text-center">UI/UX Designer</p>
                                         <p className="text-center text-gray-600 text-base pt-3 font-normal">I'm Shaquib Hussain, and I love making websites and apps look awesome and easy to use.  I believe in making things not just look good, but also work well.   I think working together and sharing ideas is super important for making things great.</p>
                                         <div className="w-full flex justify-center pt-5 pb-5">
@@ -57,14 +57,14 @@ const Our = () => {
                                 </div>
                             </div>
                             <div role="listitem" className="xl:w-1/3 lg:mx-3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                                <div className="rounded overflow-hidden shadow-md bg-white">
+                                <div className="rounded overflow-hidden shadow-md bg-[#F7EDD0]">
                                     <div className="absolute -mt-20 w-full flex justify-center">
                                         <div className="h-32 w-32">
                                             <img src={img7} alt="Display Picture of Silene Tokyo" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                                         </div>
                                     </div>
                                     <div className="px-6 mt-16">
-                                        <h1 className="font-bold text-3xl text-center mb-1">Shiva Agrawal</h1>
+                                        <h1 className="font-bold text-3xl text-center mb-1 text-[#CF3032]">Shiva Agrawal</h1>
                                         <p className="text-gray-800 text-sm text-center">Backend developer</p>
                                         <p className="text-center text-gray-600 text-base pt-3 font-normal">I'm Shiva Agrawal, a backend developer with a passion for building robust and scalable digital solutions. My focus is on creating the backbone of applicationsI thrive on crafting efficient and secure code that powers dynamic web applications and services.</p>
                                         <div className="w-full flex justify-center pt-5 pb-5">
@@ -96,14 +96,14 @@ const Our = () => {
                                 </div>
                             </div>
                             <div role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                                <div className="rounded overflow-hidden shadow-md bg-white">
+                                <div className="rounded overflow-hidden shadow-md bg-[#F7EDD0]">
                                     <div className="absolute -mt-20 w-full flex justify-center">
                                         <div className="h-32 w-32">
                                             <img src={img2} alt="Display Picture of Johnson Stone" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
                                         </div>
                                     </div>
                                     <div className="px-6 mt-16">
-                                        <h1 className="font-bold text-3xl text-center mb-1">Shikha Jaiswal</h1>
+                                        <h1 className="font-bold text-3xl text-center mb-1 text-[#CF3032]">Shikha Jaiswal</h1>
                                         <p className="text-gray-800 text-sm text-center">Frontend Developer</p>
                                         <p className="text-center text-gray-600 text-base pt-3 font-normal">I'm Shikha jaiswal, a frontend developer with a passion for turning ideas into interactive and user-friendly websites. I believe in writing clean, efficient code that brings designs to life seamlessly. I love the process of problem-solving and turning concepts into reality.</p>
                                         <div className="w-full flex justify-center pt-5 pb-5">

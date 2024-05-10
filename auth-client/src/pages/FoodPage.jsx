@@ -72,10 +72,15 @@ const FoodPage = () => {
 								<button className="bg-white active:scale-90 transition duration-500
        transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl
        font-medium text-[#f54748]"> Favourite</button>
-								<button className="bg-[#f54748] active:scale-90 transition duration-500
+								{/* <button className="bg-[#f54748] active:scale-90 transition duration-500
        transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl
        font-medium text-white"> Add to cart</button>
-							</div>
+							</div> */}
+							        <button      type="submit" class="text-white bg-gradient-to-r w-full rounded-full from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-md px-5 py-2.5 text-center me-2 mb-3 mt-5">
+            
+			Add to Cart
+						</button>
+						</div>
 						</div>
 					</div>
 

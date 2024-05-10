@@ -108,7 +108,7 @@
 import React from 'react'
 import { Link, NavLink, useNavigate } from "react-router-dom";
 
-import logo from "../assets/logo.svg";
+import logo from "../assets/logopng.png";
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { useCartContext } from '../../context/cardContext';

@@ -1,12 +1,41 @@
 body{
   font-family: 'Sofia sans',sans-serif;
   background: linear-gradient(180deg,
-  rgba(245,71,71,0.216)0%,
-  rgba(245,71,72,0)100%
+  rgba(253,250,242,0.7)
+0%,
+
+rgba(253,250,242,0)
+
+
+  100%
   );
   background-size: cover;
 }
+.image {
+  width: 100%;
+  animation: shoe-animation 3s infinite;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.image img {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  margin: auto;
+  transform: rotate(0deg);
+}
 
+@keyframes shoe-animation {
+  0% {
+    transform: translateY(0px);
+  }
+  70% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 
 /* blob */

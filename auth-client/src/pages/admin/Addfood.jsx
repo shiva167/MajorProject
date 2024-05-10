@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo_big-removebg.png";
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 // const baseUrl = "http://localhost:8000";
 const Addfood = () => {
@@ -36,7 +36,7 @@ const Addfood = () => {
 		const name = from.name.value
 		const price = from.price.value
 		const category = from.category.value
-		const weight = from.weight.value
+		// const weight = from.weight.value
 		const location = from.location.value
 		const description = from.description.value
 		const foodImage = image?.url
@@ -61,7 +61,7 @@ const Addfood = () => {
 return (
 	<div className="addfood">
 		<div className="w-full mx-auto pt-[16vh]">
-			<form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-white/80
+			<form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md mb-4 bg-[#F7EDD0]
 1g:w-max mx-auto flex flex-col  rounded-md px-8 py-5' onSubmit={handleSubmit}>
 				{/* <label htmlFor='file-upload' className='custom-file-upload'>
             <img src={image?.url || avater} alt="" className="h-32 w-32 bg-contain rounded-full mx-auto
@@ -74,7 +74,7 @@ cursor-pointer" />
 					<img
 						src={logo}
 						alt=""
-						className="logo mx-auto mb-6 cursor-pointer text-center"
+						className="logo mx-auto mb-6 h-20 cursor-pointer text-center"
 					/>
 				</NavLink>
 				<div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
@@ -87,7 +87,7 @@ cursor-pointer" />
           bg-white appearance-none border rounded w-full py-3 px-3  text-gray-700
           leading-tight focus:outline-none focus: shadow-outline"	/>
 
-					<input type="file" name='myFile' accept=' .jpeg .png .jpg' className="file-input file-input-bordered  bg-red-500 text-white w-full file-input-md  " onChange={handleImage} />
+					<input type="file" name='myFile' accept=' .jpeg .png .jpg' className="file-input file-input-bordered  bg-[#f54748] text-white w-full file-input-md  " onChange={handleImage} />
 
 					<input
 						type="number"
@@ -98,7 +98,7 @@ cursor-pointer" />
           leading-tight focus:outline-none focus: shadow-outline"
 					/>
 
-					<select className="select select-md w-full max-w-xs bg-red-500 text-white" name='category'>
+					<select className="select select-md w-full max-w-xs bg-[#f54748] text-white" name='category'>
 						<option disabled selected>Select Food Category</option>
 						<option>Rice/Biryani</option>
 						<option>Momos</option>

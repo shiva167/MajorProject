@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink,useNavigate } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo_big-removebg.png";
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
@@ -44,14 +44,14 @@ const handleOnSubmit = (e) => {
     <div className="login">
       <div className="h-screen pt-[16vh]">
         <form
-          className=" ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-white/80
+          className=" ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-[#F7EDD0]
         1g:w-max mx-auto flex flex-col items-center rounded-md px-8 py-5" onSubmit={handleOnSubmit}
         >
           <NavLink to="/home">
             <img
               src={logo}
               alt=""
-              className="logo mb-6 cursor-pointer text-center"
+              className="mb-6 h-20 cursor-pointer text-center" 
             />
           </NavLink>
           <div className="mb-4">
@@ -83,14 +83,15 @@ const handleOnSubmit = (e) => {
           leading-tight focus:outline-none focus: shadow-outline"
             />
           </div>
-          <button
+          {/* <button
             className="bg-[#f54748] active:scale-90 transition duration-150 transform
       hover:shadow-x1 shadow-md w-full rounded-full px-8 py-2 text-x1 font-medium text-white
       mx-auto text-center"
             type="submit"
           >
             Sign In
-          </button>
+          </button> */}
+<button      type="submit" class="text-white bg-gradient-to-r w-full rounded-full bg-[#CF3032]  hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-sm px-5 py-2.5 text-center me-2 mb-2">Sign in</button>
 
           <Link
             to="/register"
