@@ -12,7 +12,7 @@ const Contact = () => {
                 marginwidth="0" 
                 src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
                 style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}></iframe>
-            <div class="bg-[#F7EDD0] relative flex flex-wrap py-6 rounded shadow-md">
+            <div class="bg-[#FFFADC] relative flex flex-wrap py-6 rounded shadow-md">
                 <div class="lg:w-1/2 px-6">
                     <h2 class="title-font font-bold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
                     <p class="mt-1">Kamla Nehru Institute of Technology, Sultanpur</p>
@@ -25,7 +25,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
-        <div class="lg:w-1/3 md:w-1/2 bg-[#F7EDD0] flex flex-col p-6 md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        <div class="lg:w-1/3 md:w-1/2 bg-[#FFFADC] flex flex-col p-6 md:ml-auto w-full md:py-8 mt-8 md:mt-0">
             <h1 class="text-gray-900 text-3xl font-bold mb-1 title-font">Contact Us</h1>
             <div class="relative mb-4">
                 <label for="name" class="leading-7 text-sm text-gray-600">Name</label>

@@ -81,7 +81,7 @@ const Profile = () => {
     return (
         <div className="profile">
             <div className="w-full mx-auto pt-[16vh]">
-                <form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md mb-4 bg-[#F7EDD0]
+                <form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md mb-4 bg-[#FFFADC]
 1g:w-max mx-auto flex flex-col  rounded-md px-8 py-5'onSubmit={handleOnSubmit} >
                     <label htmlFor='file-upload' className='custom-file-upload'>
                         <img src={image?.url || user?.user?.profileImage} alt="" className="h-32 w-32 bg-contain rounded-full mx-auto

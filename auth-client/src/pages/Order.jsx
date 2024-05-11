@@ -174,7 +174,7 @@ const Order = () => {
                     <img
                         src={logo}
                         alt=""
-                        className="logo mb-6 cursor-pointer text-center"
+                        className="logo mb-6 h-20 cursor-pointer text-center"
                     />
                 </NavLink>
                 <div className="text-xl text-[#2e2e2e] mb-3">

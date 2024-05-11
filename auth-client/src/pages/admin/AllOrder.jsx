@@ -156,7 +156,7 @@ const OrderFoods = ({ order }) => {
         }</span>
       </div>
       <div className="flex justify-center w-1/5 cursor-pointer">
-        <button className="bg-[#f54748] active: scale-90 transition duration-150 transform
+        <button className="bg-[#CF3032] active: scale-90 transition duration-150 transform
 hover:shadow-xl shadow-md rounded-full px-8 py-2 text-x1 font-medium Itext-white mx-auto
 text-center" 
 onClick={()=>

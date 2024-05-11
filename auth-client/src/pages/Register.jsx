@@ -70,7 +70,7 @@ const Register = () => {
   return (
     <div className="register">
       <div className="w-full mx-auto pt-[16vh] mb-2">
-        <form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-[#F7EDD0] lg:w-max mx-auto flex flex-col  rounded-md px-8 py-4' onSubmit={handleOnSubmit}>
+        <form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-[#FFFADC] lg:w-max mx-auto flex flex-col  rounded-md px-8 py-4' onSubmit={handleOnSubmit}>
           <label htmlFor='file-upload' className='custom-file-upload'>
             <img src={image?.url || avater} alt="" className="h-32 w-32 bg-contain rounded-full mx-auto
 cursor-pointer" />

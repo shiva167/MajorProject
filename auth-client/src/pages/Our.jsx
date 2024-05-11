@@ -18,7 +18,7 @@ const Our = () => {
                     <div className="container mx-auto">
                         <div role="list" aria-label="Behind the scenes People " className="lg:flex md:flex sm:flex items-center xl:justify-between flex-wrap md:justify-around sm:justify-around lg:justify-around">
                             <div role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                                <div className="rounded overflow-hidden shadow-md bg-[#F7EDD0]">
+                                <div className="rounded overflow-hidden shadow-md bg-[#FFFADC]]">
                                     <div className="absolute -mt-20 w-full flex justify-center">
                                         <div className="h-32 w-32">
                                             <img src={img11} alt="Display Picture of Andres Berlin" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
@@ -57,7 +57,7 @@ const Our = () => {
                                 </div>
                             </div>
                             <div role="listitem" className="xl:w-1/3 lg:mx-3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                                <div className="rounded overflow-hidden shadow-md bg-[#F7EDD0]">
+                                <div className="rounded overflow-hidden shadow-md bg-[#FFFADC]]">
                                     <div className="absolute -mt-20 w-full flex justify-center">
                                         <div className="h-32 w-32">
                                             <img src={img7} alt="Display Picture of Silene Tokyo" role="img" className="rounded-full object-cover h-full w-full shadow-md" />
@@ -96,7 +96,7 @@ const Our = () => {
                                 </div>
                             </div>
                             <div role="listitem" className="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-                                <div className="rounded overflow-hidden shadow-md bg-[#F7EDD0]">
+                                <div className="rounded overflow-hidden shadow-md bg-[#FFFADC]]">
                                     <div className="absolute -mt-20 w-full flex justify-center">
                                         <div className="h-32 w-32">
                                             <img src={img2} alt="Display Picture of Johnson Stone" role="img" className="rounded-full object-cover h-full w-full shadow-md" />

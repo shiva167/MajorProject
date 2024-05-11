@@ -5,7 +5,7 @@ import '../App.css'
 
 const Foods = ({curElem}) => {
     return (
-        <div className='food-card bg-[#F7EDD0]  rounded-xl flex flex-col cursor-pointer items-center p-5'>
+        <div className='food-card bg-[#FFFADC]  rounded-xl flex flex-col cursor-pointer items-center p-5'>
         <div className='relative mb-3 m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300'>
 
 

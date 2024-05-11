@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-<footer className="footer p-10 bg-[#F7EDD0] text-base">
+<footer className="footer p-10 bg-[#FFFADC] text-base">
   <aside>
   <img src={logo} alt="" className='h-20 cursor-pointer' />
 

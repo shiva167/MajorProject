@@ -61,7 +61,7 @@ const Addfood = () => {
 return (
 	<div className="addfood">
 		<div className="w-full mx-auto pt-[16vh]">
-			<form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md mb-4 bg-[#F7EDD0]
+			<form className=' ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md mb-4 bg-[#FFFADC]
 1g:w-max mx-auto flex flex-col  rounded-md px-8 py-5' onSubmit={handleSubmit}>
 				{/* <label htmlFor='file-upload' className='custom-file-upload'>
             <img src={image?.url || avater} alt="" className="h-32 w-32 bg-contain rounded-full mx-auto
@@ -87,7 +87,7 @@ cursor-pointer" />
           bg-white appearance-none border rounded w-full py-3 px-3  text-gray-700
           leading-tight focus:outline-none focus: shadow-outline"	/>
 
-					<input type="file" name='myFile' accept=' .jpeg .png .jpg' className="file-input file-input-bordered  bg-[#f54748] text-white w-full file-input-md  " onChange={handleImage} />
+					<input type="file" name='myFile' accept=' .jpeg .png .jpg' className="file-input file-input-bordered  bg-[#CF3032] text-white w-full file-input-md  " onChange={handleImage} />
 
 					<input
 						type="number"
@@ -98,7 +98,7 @@ cursor-pointer" />
           leading-tight focus:outline-none focus: shadow-outline"
 					/>
 
-					<select className="select select-md w-full max-w-xs bg-[#f54748] text-white" name='category'>
+					<select className="select select-md w-full max-w-xs bg-[#CF3032] text-white" name='category'>
 						<option disabled selected>Select Food Category</option>
 						<option>Rice/Biryani</option>
 						<option>Momos</option>
@@ -139,7 +139,7 @@ cursor-pointer" />
 
 				</div>
 				<button
-					className="bg-[#f54748] active:scale-90 transition duration-150 transform
+					className="bg-[#CF3032] active:scale-90 transition duration-150 transform
       hover:shadow-xl shadow-md w-full rounded-full px-8 py-2 text-x1 font-medium text-white
       mx-auto text-center mb-3 mt-5"
 					type="submit"

@@ -21,7 +21,7 @@ const Blog = () => {
 
 
 <section class="mt-16">
-  <div class="py-8 lg:py-16 px-4 bg-[#F7EDD0] mx-auto max-w-screen-md">
+  <div class="py-8 lg:py-16 px-4 bg-[#FFFADC]  mx-auto max-w-screen-md">
       <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#CF3032]  dark:text-white">Write a Blog Post</h2>
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue or Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
     
@@ -51,9 +51,9 @@ const Blog = () => {
 
 
 <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-<h2 class=" text-4xl tracking-tight font-extrabold text-left mb-5 mt-4 text-[#CF3032]  dark:text-white">The Latest News</h2>
+<h2 class=" text-4xl tracking-tight font-extrabold text-left mb-5 mt-4 text-[#CF3032]  dark:text-white">What's trending</h2>
     <div class="grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mb-4 gap-10">
-        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+        <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
 
             <a href="#"></a>
             <div class="relative">
@@ -91,7 +91,7 @@ const Blog = () => {
       
             </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+        <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
             <a href="#"></a>
             <div class="relative">
                 <a href="#">
@@ -130,7 +130,7 @@ const Blog = () => {
       
             </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+        <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
 
             <a href="#"></a>
             <div class="relative">
@@ -169,7 +169,7 @@ Just had the grilled flank steak at Taste Tracker and WOW! Perfectly cooked, jui
       
             </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+        <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
 
             <a href="#"></a>
             <div class="relative">
@@ -205,7 +205,7 @@ Just had the grilled flank steak at Taste Tracker and WOW! Perfectly cooked, jui
             <div class="px-6 py-4 flex flex-row items-center">
                </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+        <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
 
 <a href="#"></a>
 <div class="relative">
@@ -242,7 +242,7 @@ Just had the grilled flank steak at Taste Tracker and WOW! Perfectly cooked, jui
 </div>
 <div class="px-6 py-4 flex flex-row items-center">
 </div>
-</div> <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+</div> <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
 
             <a href="#"></a>
             <div class="relative">
@@ -279,7 +279,7 @@ Just had the grilled flank steak at Taste Tracker and WOW! Perfectly cooked, jui
             <div class="px-6 py-4 flex flex-row items-center">
                </div>
         </div>
-        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+        <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
             <a href="#"></a>
             <div class="relative">
                 <a href="#">
@@ -320,7 +320,7 @@ Just had the grilled flank steak at Taste Tracker and WOW! Perfectly cooked, jui
                 </div>
         </div>
       
-        <div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+        <div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
 
 <a href="#"></a>
 <div class="relative">
@@ -357,7 +357,7 @@ Indulged in the mouthwatering delight at Taste Tracker. The signature sandwich, 
 <div class="px-6 py-4 flex flex-row items-center">
    </div>
 </div>
-<div class="rounded overflow-hidden shadow-lg bg-[#F7EDD0]">
+<div class="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
 <a href="#"></a>
 <div class="relative">
     <a href="#">

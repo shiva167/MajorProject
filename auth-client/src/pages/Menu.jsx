@@ -132,7 +132,7 @@ const {addToCart}=useCartContext()
           <div className='grid py-6 gap-8 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1'>
 
             {Food?.map((curElem)=>(
-              <div className='food-card bg-[#F7EDD0]  rounded-xl flex flex-col cursor-pointer items-center p-5'>
+              <div className='food-card bg-[#FFFADC]  rounded-xl flex flex-col cursor-pointer items-center p-5'>
               <div className='relative mb-3 m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300'>
                 <Link to={`/menu/${curElem?._id}`}>
                 <img src={curElem.foodImage} alt="" />

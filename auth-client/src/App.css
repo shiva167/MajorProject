@@ -1,16 +1,18 @@
 body{
   font-family: 'Sofia sans',sans-serif;
   background: linear-gradient(180deg,
-  rgba(253,250,242,0.7)
+  rgba(243,240,232,0.7)
 0%,
 
-rgba(253,250,242,0)
+rgba(243,240,232,0)
 
 
   100%
   );
   background-size: cover;
 }
+
+
 .image {
   width: 100%;
   animation: shoe-animation 3s infinite;

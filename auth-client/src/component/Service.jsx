@@ -13,15 +13,16 @@ const Service = () => {
 <div className="blob1 image h-[32rem] mx-auto justify-end"></div>
                 <div className='w-full md:w-[32rem] flex flex-col space-y-6'>
                 <div className='text-2xl md:text-3xl font-bold text-[#2e2e2e] lg:text-4xl'>
-                    We are <span className='text-yellow-900 text-opacity-80'>more</span> than <span className='text-red-500 text-opacity-70'>
-                        multiple
-                    </span> service
+                When in doubt, 
+<span className='text-yellow-900 text-opacity-80'></span> <span className='text-red-500 text-opacity-70'>
+Order Desi!
+                    </span> 
                 </div>
                 <div className='lg:text-lg text-[#191919] md:text-base text-sm'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum eum ipsa velit nobis placeat et sapiente hic repellendus aliquam?
-                </div>
+                Too lazy to cook or bored of ghar ka khana? Tired of scrolling through restaurants or stuck on a concall? Whatever the reason, When In Doubt, Order Desi! 
+                <br></br> From Dal Makhni to Amritsari Chole Chawal to Butter Chicken to Gulab Jamun, we have all of your delicious Desi Meals.  </div>
                 <div className='flex gap-8 items-center'>
-                    <Link to="/team" className='bg-[#CF3032] bg-opacity-80 active:scale-90 transition duration-150 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white'>About us</Link>
+                    {/* <Link to="/team" className='bg-[#CF3032] bg-opacity-80 active:scale-90 transition duration-150 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white'>About us</Link> */}
                 </div>
             </div>            
             

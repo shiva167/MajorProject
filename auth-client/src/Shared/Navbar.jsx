@@ -41,20 +41,30 @@ const Navbar = () => {
       </Link>
 
       <div className="lg:flex hidden gap-8 items-center">
+      <nav class="flex items-center justify-between gap-8 px-4 py-3">
+  {/* <a href="#" class="text-white text-lg font-semibold hover:underline relative">
+    Navbar Element
+    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span>
+  </a> */}
+     <Link to="/home" className='text-red-600   hover:underline relative text-xl font-medium '>
+      Home    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+   
        
-     <Link to="/home" className='text-red-600   bg-white-500 text-xl font-medium hover:text-white hover:bg-red-600  rounded-full'>Home</Link>
-  
        
-       
-       <Link to="/my-order" className='text-red-600   bg-white-500 text-xl font-medium hover:text-white hover:bg-red-600 rounded-full'>My Order</Link>
-       <Link to="/menu" className='text-red-600   bg-white-500 text-xl font-medium hover:text-white hover:bg-red-600 rounded-full'>Our Menu</Link>
+       <Link to="/my-order" className='text-red-600   hover:underline relative text-xl font-medium '>My Order
+       <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span>
+       </Link>
+       <Link to="/menu" className='text-red-600   hover:underline relative text-xl font-medium '>Our Menu
+       <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
        {
-        user?.user?.role === 'admin' && <Link to="/addfood" className='text-red-600   bg-white-500 text-xl font-medium rounded-full hover:text-white hover:bg-red-600'>Add food</Link>
-       }
+         user?.user?.role === 'admin' && <Link to="/addfood" className='text-red-600   hover:underline relative text-xl font-medium '>Add food    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+        }
 
-       <Link to="/blog" className='text-red-600   bg-white-500 text-xl font-medium hover:text-white hover:bg-red-600 rounded-full'>Blogs</Link>
-       <Link to="/team" className='text-red-600   bg-white-500 text-xl font-medium hover:text-white hover:bg-red-600 rounded-full'>About Us</Link>
-       <Link to="/contact" className='text-red-600   bg-white-500 text-xl font-medium hover:text-white hover:bg-red-600 rounded-full'>Contact Us</Link>
+       <Link to="/blog" className='text-red-600   hover:underline relative text-xl font-medium '>Blogs
+       <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+       <Link to="/team" className='text-red-600   hover:underline relative text-xl font-medium '>About Us    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+       <Link to="/contact" className='text-red-600   hover:underline relative text-xl font-medium '>Contact Us    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+              </nav>
 
        <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -70,13 +80,13 @@ const Navbar = () => {
             <Link to='viewcart'>
           {/* <button
             className="bg-[#f54748] active:scale-90 transition duration-150 transform
-      hover:shadow-xl shadow-md  rounded-full px-8 py-2 text-x1 font-medium text-white
-      mx-auto text-center mb-3 mt-5"
+            hover:shadow-xl shadow-md  rounded-full px-8 py-2 text-x1 font-medium text-white
+            mx-auto text-center mb-3 mt-5"
             type="submit"
-          >
+            >
             View Cart
           </button> */}
-          <button      type="submit" class="text-white bg-gradient-to-r w-full rounded-full bg-[#CF3032] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-sm px-5 py-2.5 text-center me-2 mb-3 mt-5">
+          <button      type="submit" class="text-white active:scale-90 transition duration-150 transform  bg-gradient-to-r w-full rounded-full bg-[#CF3032] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-sm px-5 py-2.5 text-center me-2 mb-3 mt-5">
             View Cart</button>
 
           </Link>
@@ -85,8 +95,8 @@ const Navbar = () => {
       </div>
     </div>
        {
-        user ? (
-         <div className="dropdown dropdown-end">
+         user ? (
+           <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
            <div className="w-10 rounded-full">
             <img alt="Profile image" src={user?.user?.profileImage} />
@@ -120,7 +130,7 @@ hover:text-red-500">My Order</Link>
            }}>Logout</button></li>
           </ul>
          </div>) : (<Link to='/login'>
-          <button className="bg-[#F54748] active:scale-90 transition duration-100 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white">Login
+          <button className="text-white w-full rounded-full bg-[#CF3032] hover:text-[#CF3032] hover:bg-white  font-medium  text-sm px-5 py-2.5 text-center me-2 mb-3 mt-5">Login
           </button>
          </Link>
         )
@@ -174,7 +184,7 @@ hover:text-red-500">My Order</Link>
     </div>
 <Link to="/login">
         {/* <button className="bg-[#F54748] active:scale-90 transition duration-100 transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl font-medium text-white">Login</button> */}
-        <button      type="submit" className="text-white bg-gradient-to-r w-full rounded-full bg-[#CF3032] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-sm px-5 py-2.5 text-center me-2 mb-3 mt-5">
+        <button      type="submit" className="text-white w-full rounded-full bg-[#CF3032] hover:text-[#CF3032] hover:bg-white  font-medium  text-sm px-5 py-2.5 text-center me-2 mb-3 mt-5">
             Login</button>
 
 </Link>
