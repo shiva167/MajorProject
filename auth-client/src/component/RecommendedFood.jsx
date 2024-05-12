@@ -25,7 +25,7 @@ const RecommendedFood = () => {
     }, [ratedfood])
   return (
 
-<div className='py-3 px-10 sm:px-4 md:px-6 lg:px-6'>
+<div className='py-6 px-10 pt-4 sm:px-4 md:px-6 lg:px-6'>
     <div className='container mx-auto py-[2vh]'>
         <div className='text-2xl md:text-3xl font-bold text-center text-[#2e2e2e] lg:text-4xl'>
             Recommended <span className='text-[#CF3032] text-opacity-80'>Foods</span>

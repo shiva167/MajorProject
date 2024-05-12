@@ -42,7 +42,7 @@ const handleOnSubmit = (e) => {
 
   return (
     <div className="login">
-      <div className="h-screen pt-[16vh]">
+      <div className="h-screen pt-[25vh]">
         <form
           className=" ease-in duration-300 w-[80% ] sm:w-max shadow-sm backdrop-blur-md bg-[#FFFADC]
         1g:w-max mx-auto flex flex-col items-center rounded-md px-8 py-5" onSubmit={handleOnSubmit}
