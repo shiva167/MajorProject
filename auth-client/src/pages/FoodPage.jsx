@@ -2,7 +2,9 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useCartContext } from '../../context/cardContext.jsx'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 import PageNavigation from '../component/PageNavigation'
 import { AiOutlineMinus } from 'react-icons/ai'
 import { AiOutlinePlus } from 'react-icons/ai'
@@ -21,6 +23,7 @@ const FoodPage = () => {
 			console.log(error);
 		}
 	}
+
 	useEffect(() => {
 		getFoodDetails()
 	}, [])
@@ -49,10 +52,10 @@ const FoodPage = () => {
 								{foodDetails?.description}
 							</div>
 							<div className="flex items-center justify-between mb-6">
-								<div className="text-2xl font-bold text-[#f54748]">
+								{/* <div className="text-2xl font-bold text-[#f54748]">
 									Quantity
-								</div>
-								<span className="flex items-center space-x-4">
+								</div> */}
+								{/* <span className="flex items-center space-x-4">
 									<div className="bg-red-500 relative p-4 cursor-pointer rounded-full text-white">
 										<AiOutlineMinus className='font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' size={20} />
 									</div>
@@ -64,22 +67,24 @@ const FoodPage = () => {
 										<AiOutlinePlus className='font-bold absolute top-1/2 left-1/2
                    -translate-x-1/2 -translate-y-1/2' size={20} />
 									</div>
-								</span>
+								</span> */}
 
 							</div>
-							<div className="flex flex-col sm:flex-row items-center space-y-6 sm:space-y-0
-       sm: gap-5 sm:mx-auto sm:justify-center">
-								<button className="bg-white active:scale-90 transition duration-500
+							<div>
+								{/* <button className="bg-white active:scale-90 transition duration-500
        transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl
-       font-medium text-[#f54748]"> Favourite</button>
+       font-medium text-[#f54748]"> Favourite</button> */}
 								{/* <button className="bg-[#f54748] active:scale-90 transition duration-500
        transform hover:shadow-xl shadow-md rounded-full px-8 py-2 text-xl
        font-medium text-white"> Add to cart</button>
 							</div> */}
-							        <button      type="submit" class="text-white bg-gradient-to-r w-full rounded-full from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-md px-5 py-2.5 text-center me-2 mb-3 mt-5">
+							        <Link to='/menu'>
+
+							        <button    onClick={()=> addToCart(curElem)}   type="submit" class="text-white bg-gradient-to-r w-full rounded-full from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium  text-md px-5 py-2.5 text-center me-2 mb-3 mt-5">
             
 			Add to Cart
 						</button>
+									</Link>
 						</div>
 						</div>
 					</div>
@@ -88,10 +93,10 @@ const FoodPage = () => {
 						<div className=" py-4 text-center text-white font-semibold">
 							{/* Weight: {foodDetails?.weight} kg */}
 						</div>
-						<div className="bg-[#f54748] py-4 text-center text-white font-semibold">
+						<div className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 py-4 text-center text-white font-semibold">
 							Category: {foodDetails?.category}
 						</div>
-						<div className="bg-[#f54748] py-4 text-center text-white font-semibold">
+						<div className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 py-4 text-center text-white font-semibold">
 							Location: Lucknow
 						</div>
 						<div className=" py-4 text-center text-white font-semibold">

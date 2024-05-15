@@ -1,6 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
+
+  
 const Contact = () => {
+    const [submitted, setSubmitted] = useState(false);
+
+    const [data, setData] = useState({
+        name: "",
+        email: "",
+        message: "",
+      })
+      const { name, email, message } = data
+
+      const handleChange = (e) =>{
+        setData({ ...data, [e.target.name]: e.target.value })
+      }
+      const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+          await fetch("https://v1.nocodeapi.com/shiva167/google_sheets/HZdqpqvKVsGuyuFm?tabId=Sheet1", {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify([[name, email, message]]),
+            })
+
+            setSubmitted(true);
+            setData({
+                name: "",
+                email: "",
+                message: "",
+            });
+
+            // Display a success toast notification
+            toast.success('Successfully Submitted.');
+
+    } catch (err) {
+        console.log(err)
+    }
+      }
+      
+      
+    
   return (
     <>
 
@@ -29,21 +73,30 @@ const Contact = () => {
             </div>
         </div>
         <div class="lg:w-1/3 md:w-1/2 bg-[#FFFADC] flex flex-col p-6 md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+        
+
+            <form onSubmit={handleSubmit}>
+
             <h1 class="text-gray-900 text-3xl font-bold mb-1 title-font">Contact Us</h1>
             <div class="relative mb-4">
                 <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <input type="text" id="name" onChange={handleChange} name="name" value={name} class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
             </div>
             <div class="relative mb-4">
                 <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <input type="email" id="email" onChange={handleChange}  value={email}  name="email" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
             </div>
             <div class="relative mb-4">
                 <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                <textarea id="message" onChange={handleChange} name="message"  value={message}  class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
             </div>
-            <button class="text-white bg-[#CF3032]  border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Submit</button>
+            <button  type="submit"  className="text-white bg-[#CF3032]  border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Submit</button>
            
+            </form>
+            <ToastContainer />
+
+           
+
         </div>
     </div>
 </section>

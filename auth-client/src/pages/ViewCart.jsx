@@ -48,9 +48,9 @@ const ViewCart = () => {
             <div className={
               cartItems.length === 0 ? "mx-auto hidden items-end justify-center px-6 flex-col" :
                 "mx-auto justify-end items-end px-6 flex-col"}>
-              <div className="text-right mb-2 font-semibold text-red-900">
+              {/* <div className="text-right mb-2 font-semibold text-red-900">
                 Shipping : ₹{shippingPrice}
-              </div>
+              </div> */}
               <div className="text-right mb-2 font-semibold text-red-900">
                 Total Price : ₹{totaPrice}
               </div>

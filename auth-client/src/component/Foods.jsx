@@ -16,7 +16,7 @@ const Foods = ({curElem}) => {
 
           <div className='absolute top-2 left-2'>
             <button className='shadow-sm text-white bg-red-500 bg-opacity-80 cursor-pointer p-5 rounded-full relative '>
-              <FaHeart className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+              {/* <FaHeart className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' /> */}
             </button>
           </div>
           <div className='absolute bottom-2 right-2 '>
@@ -29,7 +29,7 @@ const Foods = ({curElem}) => {
           <p className='text-xl text-center font-bold mb-2 text-[#CF3032] text-opacity-80'>{curElem?.name}
           </p>
           <div className='flex text-sm space-x-2 cursor-pointer'>
-            <FaStar size={18} className='text-[#fdc55e] mb-2' /> 
+            {/* <FaStar size={18} className='text-[#fdc55e] mb-2' />  */}
             {/* <span className='font-normal text-[#fdc55e]'>4.3</span>
             {/* <span className='font-medium '>({curElem?.reviews?.length})</span> */}
           </div>
