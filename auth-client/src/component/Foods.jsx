@@ -14,11 +14,11 @@ const Foods = ({curElem}) => {
 
           </Link>
 
-          <div className='absolute top-2 left-2'>
+          {/* <div className='absolute top-2 left-2'>
             <button className='shadow-sm text-white bg-red-500 bg-opacity-80 cursor-pointer p-5 rounded-full relative '>
-              {/* <FaHeart className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' /> */}
+               <FaHeart className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' /> 
             </button>
-          </div>
+          </div> */}
           <div className='absolute bottom-2 right-2 '>
             <button className='shadow-sm bottom-0 border-white text-white bg-red-500 bg-opacity-70 cursor-pointer p-5 h-14 w-14 text-xl font-bold rounded-full relative '>
               <div className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>₹{curElem?.price}</div>
