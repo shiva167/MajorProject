@@ -55,16 +55,18 @@ const MyOrder = () => {
                         </div>
                         <div className="mt-10 flex mb-5">
                             <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
-                                Food details
+                               <pre>                         Food details     </pre> 
+                            </h3>
+                            {/* <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
+                                Status
+                            </h3> */}
+                            <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
+                                <pre>                                       Time
+                                    </pre>
                             </h3>
                             <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
-                                Category
-                            </h3>
-                            <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
-                                Price
-                            </h3>
-                            <h3 className="font-semibold text-[#CF3032] text-opacity-80 text-xs uppercase w-2/5">
-                                Total Price
+                             <pre>                                   Total Price
+                                </pre>
                             </h3>
                         </div>
                         {
@@ -137,7 +139,7 @@ const CartFood = ({ food }) => {
                 </div>
             </div>
 
-
+{/* 
             <div className="flex justify-center w-1/5 cursor-pointer">
                 {
                     food?.payment === false && <span className='font-bold text-sm'>Not paid</span>
@@ -145,20 +147,22 @@ const CartFood = ({ food }) => {
                 {
                     food?.payment && <span className='font-bold text-green-600 text-sm'>Paid</span>
                 }
-            </div>
-            <div className="flex justify-center w-1/5 cursor-pointer">
+            </div> */}
+            {/* <div className="flex justify-center w-1/5 cursor-pointer">
                 
                      <span className='font-bold text-sm'>{food?.status}</span>
                
                 
-            </div>
+            </div> */}
             <span className='font-bold text-center w-1/5 text-sm'>
 
-                 {food?.createdAt}
+                 <pre>                {food?.createdAt}
+                    
+                    </pre>
             </span>
             <span className='font-bold text-center w-1/5 text-sm'>
-
-               ₹ {food?.totalAmount}
+            <pre>                                            ₹ {food?.totalAmount}
+                                </pre>
             </span>
 
 

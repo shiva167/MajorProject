@@ -9,7 +9,7 @@ const Our = () => {
     return(
 <div className="mb-12  bg-white w-full">
                 <div className="container flex justify-center  bg-white w-full mt-15">
-                    <h1 className="text-4xl pt-36 pl-4  mb-2  font-extrabold text-center text-[#CF3032]   dark:text-white ">  <pre>          We 3</pre></h1>
+                    <h1 className="text-4xl pt-36 pl-4  mb-2  font-extrabold text-center text-[#CF3032]   dark:text-white ">  <pre>   We 3</pre></h1>
                     {/* <div>
                         <h1 className="xl:text-4xl text-3xl text-center text-gray-800 font-extrabold pb-6 sm:w-4/6 w-5/6 mx-auto">The Talented People Behind the Scenes of the Organization</h1>
                     </div> */}

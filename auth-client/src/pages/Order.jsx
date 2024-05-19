@@ -118,11 +118,11 @@ import axios from 'axios'
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Order = () => {
     const { cartItems, removeItem, addToCart } = useCartContext()
-    const itemsPrice = cartItems.reduce((a, c) => a + c.qty + c.price, 0);
-    const taxPrice = itemsPrice * 0.14;
+    const itemsPrice = cartItems.reduce((a, c) => a + c.price, 0);
+    const taxPrice = itemsPrice * 0.05;
     const taxPriceLength = taxPrice.toFixed(2);
-    const shippingPrice = itemsPrice > 2000 ? 0 : 20;
-    const totaPrice = itemsPrice + shippingPrice + parseInt(taxPriceLength);
+    // const totaPrice = itemsPrice + parseInt(taxPriceLength);
+    const totalPrice = itemsPrice + Math.round(parseFloat(taxPriceLength));
 
     const { user } = useUserContext()
     const stripe = useStripe()
@@ -183,11 +183,9 @@ const Order = () => {
                 <div className="text-xl text-[#2e2e2e] mb-3">
                     Tax price: <span className='text-[#f54748]'>₹{taxPriceLength}</span>
                 </div>
+            
                 <div className="text-xl text-[#2e2e2e] mb-3">
-                    Shipping price: <span className='text-[#f54748]'>₹{shippingPrice}</span>
-                </div>
-                <div className="text-xl text-[#2e2e2e] mb-3">
-                    Total price: <span className='text-[#f54748]'>₹{totaPrice}</span>
+                    Total price: <span className='text-[#f54748]'>₹{totalPrice}</span>
                 </div>
                 <button
                     className="bg-[#f54748] active:scale-90 transition duration-150 transform
@@ -195,8 +193,18 @@ const Order = () => {
       mx-auto text-center mt-4"
                     onClick={handleFinish}
                 >
-                    Pay ₹{totaPrice}
+                    Pay ₹{totalPrice}
                 </button>
+<Link to='/home'>
+                <button
+                    className="bg-[#f54748] active:scale-90 transition duration-150 transform
+                    hover:shadow-x1 shadow-md w-full rounded-full px-8 py-2 text-x1 font-medium text-white
+                    mx-auto text-center mt-4"
+                
+                    >
+                    <pre>  Cancel  </pre>
+                </button>
+                    </Link>
 
 
                 <ToastContainer />

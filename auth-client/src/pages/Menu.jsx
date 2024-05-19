@@ -138,11 +138,11 @@ const {addToCart}=useCartContext()
                 <img src={curElem.foodImage} alt="" />
 
                 </Link>
-                <div className='absolute top-2 left-2'>
+                {/* <div className='absolute top-2 left-2'>
                   <button className='shadow-sm text-white bg-[#CF3032] bg-opacity-80 cursor-pointer p-5 rounded-full relative '>
                     <FaHeart className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
                   </button>
-                </div>
+                </div> */}
                 <div className='absolute bottom-2 right-2 '>
                   <button className='shadow-sm bottom-0 border-white text-white bg-red-500 bg-opacity-70  cursor-pointer p-3 h-14 w-14 text-xl font-bold rounded-full relative '>
                     <div className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>₹{curElem?.price}</div>
@@ -153,7 +153,7 @@ const {addToCart}=useCartContext()
                 <p className='text-xl text-center font-bold text-[#CF3032] text-opacity-80 mb-2'>{curElem?.name}
                 </p>
                 <div className='flex text-sm space-x-2 cursor-pointer'>
-                  <FaStar size={18} className='text-[#fdc55e] mb-2' />
+                  {/* <FaStar size={18} className='text-[#fdc55e] mb-2' /> */}
                   {/* <span className='font-normal text-[#fdc55e]'>4.3</span> */}
                   {/* <span className='font-medium '>({curElem?.reviews?.length})</span> */}
                 </div>

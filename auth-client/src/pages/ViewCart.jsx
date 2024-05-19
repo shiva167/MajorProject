@@ -4,10 +4,11 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 const ViewCart = () => {
   const { cartItems, removeItem, addToCart } = useCartContext()
-  const itemsPrice = cartItems.reduce((a, c) => a + c.qty + c.price, 0)
-  const taxPrice = itemsPrice * 0.14;
-  const shippingPrice = itemsPrice > 2000 ? 0 : 20
-  const totaPrice = itemsPrice + shippingPrice + taxPrice
+  const itemsPrice = cartItems.reduce((a, c) => a + c.price, 0);
+  const taxPrice = itemsPrice * 0.05;
+  const taxPriceLength = taxPrice.toFixed(2);
+  // const shippingPrice = itemsPrice > 500 ? 0 : 20;
+  const totaPrice = itemsPrice + parseInt(taxPriceLength);
   return (
     <div className="pt-14">
       <div className={cartItems?.length === 0 ? 'bg-gray-100 h-96' : 'bg-gray-100'}>
@@ -18,21 +19,28 @@ const ViewCart = () => {
                 My food cart
               </h1>
               <h2 className="font-semibold text-2xl">
-                {cartItems?.length || 0}
+                {cartItems?.length || 0} items
               </h2>
             </div>
             <div className="mt-10 flex mb-5">
               <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
-                Food details
+              <pre>        Food details
+                </pre>
               </h3>
               <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
-                Category
+               <pre>            Category
+
+               </pre>
               </h3>
               <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
-                Price
+              <pre>      Price
+
+              </pre>
               </h3>
               <h3 className="font-semibold text-gray-900 text-xs uppercase w-2/5">
-                Total Price
+               <pre>     Total Price
+
+               </pre>
               </h3>
             </div>
             {
@@ -52,7 +60,8 @@ const ViewCart = () => {
                 Shipping : ₹{shippingPrice}
               </div> */}
               <div className="text-right mb-2 font-semibold text-red-900">
-                Total Price : ₹{totaPrice}
+                 Total Price : ₹{itemsPrice}
+                
               </div>
               <Link to='/order'>
               <button className="btn text-right justify-end ml-auto flex-end text-white hover:bg-red-600 hover:border-red-600 btn-sm bg-red-500">
@@ -101,18 +110,23 @@ rounded-full relative" onClick={() => addToCart(food)}>
 
       <div className="flex justify-center w-1/5 cursor-pointer">
         <span className='font-bold text-sm'>
-          {
+          <pre>                  {
+            
             food?.category
           }
+
+          </pre>
         </span>
       </div>
       <span className='font-bold text-center w-1/5 text-sm'>
 
-        ₹ {food.price} X {food?.qty}
+     <pre>                      ₹ {food.price} X {food?.qty}
+      </pre>
       </span>
       <span className='font-bold text-center w-1/5 text-sm'>
+<pre>                                {food.qty * food.price}
 
-        {food.qty * food.price}
+</pre>
       </span>
 
 
