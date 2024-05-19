@@ -1,5 +1,5 @@
 import React from 'react'
-// import chef2 from "../assets/chef2.png";
+import chef2 from "../assets/chef2.png";
 
 
 const Service2 = () => {
