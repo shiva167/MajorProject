@@ -54,7 +54,7 @@ const AllOrder = () => {
                   Food Details
                 </h3>
                 <h3 className="font-semibold text-center text-gray-900 text-1xl uppercase w-4/5">
-                  Payment
+                  Time
                 </h3>
                 <h3 className="font-semibold text-center text-gray-900 text-1xl uppercase w-4/5">
                   Total Price
@@ -147,27 +147,29 @@ const OrderFoods = ({ order }) => {
           }
         </div>
       </div>
-      <div className="flex justify-center w-1/5 cursor-pointer">
+      {/* <div className="flex justify-center w-1/5 cursor-pointer">
         {order?.payment === false && <span className="font-bold text-sm">Not paid</span>}
         {order?.payment && <span className="font-bold text-green-600 text-sm">paid</span>}
-      </div>
-      <div className="flex justify-center w-1/5 cursor-pointer">
+      </div> */}
+      {/* <div className="flex justify-center w-1/5 cursor-pointer">
         <span className="font-bold text-sm">{order?.status
         }</span>
-      </div>
-      <div className="flex justify-center w-1/5 cursor-pointer">
-        {/* <button className="bg-[#CF3032] active: scale-90 transition duration-150 transform
+      </div> */}
+      {/* <div className="flex justify-center w-1/5 cursor-pointer">
+        <button className="bg-[#CF3032] active: scale-90 transition duration-150 transform
 hover:shadow-xl shadow-md rounded-full px-8 py-2 text-x1 font-medium Itext-white mx-auto
 text-center" 
 onClick={()=>
-  handleDelivered(order?.id)}>Deliverd</button> */}
-      </div>
+  handleDelivered(order?.id)}>Deliverd</button>
+      </div> */}
       <span className="text-center w-1/5 font-semibold text-sm">
-        {order?.createdAt}
+      <pre>     {order?.createdAt}      </pre>
       </span>
       <span className="text-center w-1/5 font-semibold text-sm">
-        {order?.totalAmount
-        }
+        <pre>                                {order?.totalAmount}
+
+        </pre>
+         
       </span>
       <ToastContainer />
     </div>
