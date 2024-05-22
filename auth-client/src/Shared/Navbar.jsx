@@ -59,12 +59,20 @@ const Navbar = () => {
        {
          user?.user?.role === 'admin' && <Link to="/addfood" className='text-red-600   hover:underline relative text-xl font-medium '>Add food    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
         }
+       {
+         user?.user?.role === 'admin' && <Link to="/addblog" className='text-red-600   hover:underline relative text-xl font-medium '>Add blog    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+        }
 
-       <Link to="/blog" className='text-red-600   hover:underline relative text-xl font-medium '>Blogs
+       <Link to="/getAllBlogs" className='text-red-600   hover:underline relative text-xl font-medium '>Blogs
        <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+       {
+user?.user?.role !== 'admin' && 
        <Link to="/team" className='text-red-600   hover:underline relative text-xl font-medium '>About Us    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
-       <Link to="/contact" className='text-red-600   hover:underline relative text-xl font-medium '>Contact Us    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
-              </nav>
+       }
+               {
+user?.user?.role !== 'admin' && <Link to="/contact" className='text-red-600   hover:underline relative text-xl font-medium '>Contact Us    <span class="absolute left-0 bottom-0 w-0 h-1 bg-red-600 transition-all duration-300"></span></Link>
+              
+}</nav>
 
        <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -122,7 +130,6 @@ hover:text-red-500">My Order</Link>
 </li>
 
 
-           <li><a>Settings</a></li>
            <li><button  className='hover:text-red-500' onClick={() => {
             localStorage.clear()
             location.reload()
@@ -150,7 +157,7 @@ hover:text-red-500">My Order</Link>
         <Link to="/" className='text-[#191919] text-base font-medium hover:text-red-500'>Home</Link>
         
         <Link to="/menu" className='text-[#191919] text-base font-medium hover:text-red-500'>Our Menu</Link>
-        <Link to="/blog" className='text-[#191919] text-base font-medium hover:text-red-500'>Blogs</Link>
+        <Link to="/getAllBlogs" className='text-[#191919] text-base font-medium hover:text-red-500'>Blogs</Link>
         <Link to="/team" className='text-[#191919] text-base font-medium hover:text-red-500'>About Us</Link>
         <Link to="/contact" className='text-[#191919] text-base font-medium hover:text-red-500'>Contact Us</Link>
 

@@ -115,10 +115,11 @@ import { useCartContext } from '../../context/cardContext';
 import { useUserContext } from '../../context/userContext';
 import { useStripe } from '@stripe/react-stripe-js';
 import axios from 'axios'
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Order = () => {
     const { cartItems, removeItem, addToCart } = useCartContext()
-    const itemsPrice = cartItems.reduce((a, c) => a + c.price, 0);
+    const itemsPrice = cartItems.reduce((a, c) => a + c.qty*c.price, 0);
     const taxPrice = itemsPrice * 0.05;
     const taxPriceLength = taxPrice.toFixed(2);
     // const totaPrice = itemsPrice + parseInt(taxPriceLength);
@@ -139,7 +140,7 @@ const Order = () => {
             const res = await axios.post(`${baseUrl}/api/v1/order/order`, {
                 user: user?.user._id,
                 items: orderItems,
-                totalAmount: totaPrice,
+                totalAmount: totalPrice,
             }, {
 
                 headers: {

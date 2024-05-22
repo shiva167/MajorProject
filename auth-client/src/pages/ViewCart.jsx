@@ -4,7 +4,7 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 const ViewCart = () => {
   const { cartItems, removeItem, addToCart } = useCartContext()
-  const itemsPrice = cartItems.reduce((a, c) => a + c.price, 0);
+  const itemsPrice = cartItems.reduce((a, c) => a + c.qty*c.price, 0);
   const taxPrice = itemsPrice * 0.05;
   const taxPriceLength = taxPrice.toFixed(2);
   // const shippingPrice = itemsPrice > 500 ? 0 : 20;

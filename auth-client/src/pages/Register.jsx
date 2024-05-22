@@ -6,8 +6,8 @@ import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-// const baseUrl = "http://localhost:8000";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
 const Register = () => {
 
   const [image, setImage] = useState({})

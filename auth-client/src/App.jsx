@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ProtectedRoute from './pages/ProtectedRoute'
 import VerifyOtp from './pages/VerifyOtp'
 import Addfood from './pages/admin/Addfood'
+import BlogAdd from './pages/admin/BlogAdd'
 import Menu from './pages/Menu'
 import FoodPage from './pages/FoodPage'
 import Profile from './pages/Profile'
@@ -54,9 +55,10 @@ function App() {
 
         } />
         <Route path='/addfood' element={<ProtectedRoute><Addfood /></ProtectedRoute>} />
+        <Route path='/addblog' element={<ProtectedRoute><BlogAdd /></ProtectedRoute>} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/profile' element={<ProtectedRoute><Profile /></ProtectedRoute>} />
-        <Route path='/blog' element={<Blog/>} />
+        <Route path='/getAllBlogs' element={<Blog/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/menu/:id' element={<FoodPage />} />
         <Route path='/viewcart' element={<ProtectedRoute><ViewCart /></ProtectedRoute>} />

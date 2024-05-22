@@ -5,8 +5,8 @@ import axios from 'axios'
 import { FaHeart, FaStar } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cardContext.jsx'
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-// const baseUrl = "http://localhost:8000";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
 const Menu = () => {
   
   const { Food, setFood } = useFoodContext()

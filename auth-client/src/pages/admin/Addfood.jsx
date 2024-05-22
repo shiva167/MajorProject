@@ -5,8 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
 import logo from "../../assets/logo_big-removebg.png";
-const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-// const baseUrl = "http://localhost:8000";
+// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+const baseUrl = "http://localhost:8000";
 const Addfood = () => {
 	const [image, setImage] = useState({})
 	const [uploading, setUploading] = useState(false)
