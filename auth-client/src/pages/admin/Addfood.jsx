@@ -5,8 +5,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
 import logo from "../../assets/logo_big-removebg.png";
-// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 const Addfood = () => {
 	const [image, setImage] = useState({})
 	const [uploading, setUploading] = useState(false)
@@ -157,46 +157,4 @@ cursor-pointer" />
 export default Addfood
 
 
-//VIDEO LOG (VID- 3)
-//34:09 vid 3
-//48:59 se dekhna hai
-//1:02:24 se continue
-//1:09:11 vid cut
-//1:10:25 vid cut
-//1:15:00
-//1:20:27 cut hai
-//1:28:18 axios problem
-//1:25:21  POSTMAN TESTING
-//1:45:07 conti...
-//1:59:28 conti...
 
-
-
-
-
-//****LAST VIDEO****/
-//start from 4:55
-//13:26 continue
-//24:39 continue
-//28:16 major cut (1/6/24 => 1/11/24)
-//36:36 continue
-//50:49 continue
-//1:11:00 stripe integration start
-//1:33:48 continue
-
-//***1:34:00 stripe ka lafda
-//*** */ 1:38:54  continue (lag gye => entire file missing, stripe issue)
- // 1:40:16 continue
- //1:41:14 after successful payment wala kam
- //1:45:15 continue
- //1:46:04 My Order fuss (28:18 last video me change hua hai 1/6/24 => 1/11/24)
-//1:50:35 continue
-//1:54:49 dropdown fuss
-//1:55:08 Navbar reveal 
-//1:56:15 se continue krna hai after making AllOrder.jsx
-
-
-
-//****AllOrder fuss ****/
-//p1: 1:35:24  (neeche ka)
-//p2: 1:55:41  (upar ka)

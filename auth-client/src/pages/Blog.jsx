@@ -5,8 +5,8 @@ import axios from 'axios';
 import BlogsPage from './BlogsPage';
 
 import { useUserContext } from '../../context/userContext';
-const baseUrl = "http://localhost:8000";
-
+// const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Blog = () => {
     const [newBlog, setNewBlog] = useState([]);
 

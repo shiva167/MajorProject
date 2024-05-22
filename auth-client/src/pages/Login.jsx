@@ -3,8 +3,8 @@ import { Link, NavLink,useNavigate } from "react-router-dom";
 import logo from "../assets/logo_big-removebg.png";
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 const Login = () => {
 
 const navigate = useNavigate()

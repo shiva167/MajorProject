@@ -3,8 +3,8 @@ import { useUserContext } from '../../context/userContext'
 import axios from 'axios'
 import {Navigate} from 'react-router-dom'
 
-// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 export default function ProtectedRoute({ children }) {
     const { user, setUser } = useUserContext()
     const getUser = async () => {

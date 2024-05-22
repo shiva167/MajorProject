@@ -3,8 +3,8 @@ import { FaHeart, FaStar } from 'react-icons/fa'
 import { useFoodContext } from '../../context/foodContext'
 import Foods from './Foods'
 import  axios  from 'axios'
-// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 const Special = () => {
     const [specialfood, setSpecialFood] = useState([])
     const { Food, setFood } = useFoodContext()

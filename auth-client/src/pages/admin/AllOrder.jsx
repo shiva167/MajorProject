@@ -3,8 +3,8 @@ import { useUserContext } from '../../../context/userContext';
 import { toast, ToastContainer } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
-// const baseUrl = "https://majorproject-1-t1wr.onrender.com";
-const baseUrl = "http://localhost:8000";
+const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 const AllOrder = () => {
   const [order, getOrders] = useState([])
   const { user, setUser } = useUserContext()
@@ -107,7 +107,7 @@ const OrderFoods = ({ order }) => {
     console.log("id",id)
     console.log("dbvjbsdh");
     try {
-      const res = await axios.post(`http://localhost:8000/api/v1/order/deliverd`, {
+      const res = await axios.post(`${baseUrl}/api/v1/order/deliverd`, {
         userId: user?.user._id,
         orderId: id,
         token: localStorage.getItem("token")

@@ -5,11 +5,11 @@ import axios from 'axios';
 import '../App.css';
 
 const BlogsPage = ({ curElem, getBlogs }) => {
-
+    const baseUrl = "https://majorproject-1-t1wr.onrender.com";
     const { user, setUser } = useUserContext()
     const handleDelete = async () => {
         try {
-            await axios.delete(`http://localhost:8000/api/v1/blog/blogDelete/${curElem._id}`);
+            await axios.delete(`${baseUrl}/api/v1/blog/blogDelete/${curElem._id}`);
             getBlogs(); // Refresh the blogs list after deletion
         } catch (error) {
             console.error('Failed to delete the blog post:', error);
