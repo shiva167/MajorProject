@@ -6,7 +6,7 @@ import { FaPlay, FaSearch } from "react-icons/fa";
 import Carousel from './Carousel.jsx';
 function Header() {
     return (
-        <div className='py-2 px-10 sm:px-4 mt-10 md:px-6 lg:px-6'>
+        <div className='py-8 px-10  pl-4 pr-4 sm:px-4 mt-10 md:px-6 lg:px-6'>
             <div className='container mx-auto py-[16vh]'>
                 <div className='grid grid-cols-1 relative lg:grid-cols-2 gap-8 items-center'>
                     <div className=' lg:w-[32rem] w-full flex flex-col space-y-6'>

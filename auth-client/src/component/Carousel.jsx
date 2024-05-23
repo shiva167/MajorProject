@@ -19,7 +19,7 @@ function Carousel() {
   }, []);
 
   return (
-    <div className="relative w-full rounded-3xl h-full overflow-hidden shadow-black shadow-2xl">
+    <div className="relative mt-14 w-full rounded-3xl h-full overflow-hidden shadow-black shadow-2xl">
       <div
         className="absolute top-0 left-0 w-full h-full flex transition-opacity ease-in-out duration-500 "
         style={{

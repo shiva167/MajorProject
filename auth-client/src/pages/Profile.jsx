@@ -46,7 +46,7 @@ const Profile = () => {
 
         try {
             const res = await axios.post(
-                "http://localhost:8000/api/v1/user/update", {
+                `${baseUrl}/api/v1/user/update`, {
                 userId: user.user._id,
                 name,
                 country,
