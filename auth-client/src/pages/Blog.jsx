@@ -24,6 +24,33 @@ const Blog = () => {
     useEffect(() => {
         getBlogs();
     }, []);
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+          await fetch("https://v1.nocodeapi.com/shiva167/google_sheets/gzlxFKdzQGnmvdff?tabId=Sheet1", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify([[email,subject, message]]),
+          })
+          setSubmitted(true);
+          setData({
+              email: "",
+              subject:"",
+              message: "",
+          });
+
+          // Display a success toast notification
+          toast.success('Successfully Submitted.');
+
+        } catch (err) {
+          console.log(err)
+        }
+      }
+      
+      
+   
 
     return (
         <>
