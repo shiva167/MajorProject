@@ -44,7 +44,7 @@ const Register = () => {
       name, email, password, passwordConfirm,
       profileImage
     };
-     fetch('http://localhost:8000/api/v1/user/register', {
+     fetch(`${baseUrl}/api/v1/user/register`, {
       method: "POST",
       headers: {
         "content-type": "application/json"
