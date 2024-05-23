@@ -3,7 +3,6 @@ import { useUserContext } from '../../context/userContext'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
-
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 // const baseUrl = "http://localhost:8000";
 const VerifyOtp = () => {

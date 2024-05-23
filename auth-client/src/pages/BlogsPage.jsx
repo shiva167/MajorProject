@@ -7,6 +7,7 @@ import '../App.css';
 
 const BlogsPage = ({ curElem, setNewBlog, newBlog }) => {
     const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+    // const baseUrl = "http://localhost:8000";
     const { user } = useUserContext();
 
     const handleDelete = async () => {

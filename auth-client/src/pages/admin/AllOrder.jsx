@@ -102,7 +102,8 @@ export default AllOrder
 
 const OrderFoods = ({ order }) => {
   const { user, setUser } = useUserContext()
-  
+  const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+  // const baseUrl = "http://localhost:8000";
   const handleDelivered = async (id) => {
     console.log("id",id)
     console.log("dbvjbsdh");

@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import { useFoodContext } from '../../context/foodContext'
 import { useEffect } from 'react'
 import axios from 'axios'
+import { useUserContext } from '../../context/userContext';
 import { FaHeart, FaStar } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../../context/cardContext.jsx'
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 // const baseUrl = "http://localhost:8000";
 const Menu = () => {
-  
+  const { user } = useUserContext();
   const { Food, setFood } = useFoodContext()
   const [active, setActive] = useState(0)
   const [value, setValue] = useState('all')
@@ -114,6 +115,14 @@ const Menu = () => {
     getFoods()
   }, [value])
 
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`${baseUrl}/api/v1/food/foodDelete/${id}`);
+      setFood(Food.filter(food => food._id !== id)); // Update frontend state after successful deletion
+    } catch (error) {
+      console.error('Failed to delete the food item:', error);
+    }
+  };
 const {addToCart}=useCartContext()
 
   return (
@@ -148,6 +157,15 @@ const {addToCart}=useCartContext()
                     <div className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>₹{curElem?.price}</div>
                   </button>
                 </div>
+                {user?.user?.role === 'admin' && (
+                <div className='absolute bottom-2 left-2 '>
+                  <button onClick={() => handleDelete(curElem._id)}  className='shadow-sm bottom-0 border-white text-white bg-red-500 bg-opacity-70  cursor-pointer p-3 h-14 w-14 text-xl font-bold rounded-full relative '>
+                    <div className='absolute text-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>X</div>
+                  </button>
+                </div>
+
+
+)}
               </div>
               <div className='flex gap-4 items-center'>
                 <p className='text-xl text-center font-bold text-[#CF3032] text-opacity-80 mb-2'>{curElem?.name}
@@ -165,6 +183,7 @@ const {addToCart}=useCartContext()
             
             Add to cart
                         </button>
+
             </div>
             ))}
           </div>
@@ -176,8 +195,6 @@ const {addToCart}=useCartContext()
 }
 
 export default Menu
-
-
 
 
 

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { useUserContext } from '../../context/userContext'
 import axios from 'axios'
 import {Navigate} from 'react-router-dom'
-
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 // const baseUrl = "http://localhost:8000";
 export default function ProtectedRoute({ children }) {

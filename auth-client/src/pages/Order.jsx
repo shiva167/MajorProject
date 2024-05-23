@@ -12,8 +12,8 @@ import { useCartContext } from '../../context/cardContext';
 import { useUserContext } from '../../context/userContext';
 import { useStripe } from '@stripe/react-stripe-js';
 import axios from 'axios'
-// const baseUrl = "http://localhost:8000";
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 const Order = () => {
     const { cartItems, removeItem, addToCart } = useCartContext()
     const itemsPrice = cartItems.reduce((a, c) => a + c.qty*c.price, 0);

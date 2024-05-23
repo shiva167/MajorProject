@@ -143,5 +143,14 @@ const getFoodById = async (req, res) => {
     });
   }
 };
+const foodDelete=async (req, res) => {
+  try {
+      const { id } = req.params;
+      await Food.findByIdAndDelete(id);
+      res.status(200).json({ success: true, message: 'Food item deleted successfully!' });
+  } catch (error) {
+      res.status(500).json({ success: false, message: 'Failed to delete food item', error });
+  }
+};
 
-module.exports = { createFood, getAllFoods, getFoodById, getNewFoods, getFoodsFromDistCat,getTopRating };
+module.exports = { createFood, getAllFoods, getFoodById, getNewFoods, getFoodsFromDistCat,getTopRating,foodDelete };

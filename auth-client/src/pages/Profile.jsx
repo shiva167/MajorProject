@@ -7,8 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import axios from 'axios'
 import { useUserContext } from '../../context/userContext';
-// const baseUrl = "http://localhost:8000";
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
+// const baseUrl = "http://localhost:8000";
 const Profile = () => {
     const [image, setImage] = useState({})
 
