@@ -9,7 +9,14 @@ const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 const Blog = () => {
     const [newBlog, setNewBlog] = useState([]);
     const { user } = useUserContext();
-
+    const [submitted, setSubmitted] = useState(false);
+    const [data, setData] = useState({
+        email: "",
+        subject:"",
+        message: "",
+      })
+      const { email, subject, message } = data
+      
     const getBlogs = async () => {
         try {
             const res = await axios.get(`${baseUrl}/api/v1/blog/getAllBlogs`);
@@ -20,7 +27,9 @@ const Blog = () => {
             console.log(error);
         }
     };
-
+    const handleChange = (e) =>{
+        setData({ ...data, [e.target.name]: e.target.value })
+      }
     useEffect(() => {
         getBlogs();
     }, []);
