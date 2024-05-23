@@ -103,7 +103,7 @@ const CartFood = ({ food }) => {
                         food?.items?.map((item) => <>
                             <div className="flex flex-col justify-between ml-4 flex-grow">
                                 <div>
-                                    <img src={item?.food.foodImage} alt="" className="h-20" />
+                                    <img src={item?.food?.foodImage} alt="" className="h-20" />
                                 </div>
                                 <span className="font-bold text-sm">
                                     {item?.food?.name}
