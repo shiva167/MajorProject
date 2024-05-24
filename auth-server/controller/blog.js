@@ -22,34 +22,41 @@ const createBlog = async (req, res) => {
     });
   }
 };
+
+
 const getAllBlogs = async (req, res) => {
   try {
-    const blogItems = await Blog.find().sort({ createdAt: -1 }); // Sort by createdAt in descending order
-
-    res.status(200).json({
-      message: "Blogs fetched successfully!",
-      success: true,
-      data: {
-        blog: blogItems,
-      },
-    });
+      const blogs = await Blog.find();
+      res.json({ success: true, data: { blogs } });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({
-      error: "Internal server error",
-      success: false,
-    });
+      res.status(500).json({ success: false, message: 'Server error' });
   }
 };
-const blogDelete=async (req, res) => {
+
+const blogDelete= async (req, res) => {
   try {
-      const { id } = req.params;
-      await Blog.findByIdAndDelete(id);
-      res.status(200).json({ success: true, message: 'Blog post deleted successfully!' });
+      const blog = await Blog.findByIdAndDelete(req.params.id);
+      if (!blog) {
+          return res.status(404).json({ success: false, message: 'Blog not found' });
+      }
+      res.json({ success: true, message: 'Blog deleted successfully' });
   } catch (error) {
-      res.status(500).json({ success: false, message: 'Failed to delete blog post', error });
+      res.status(500).json({ success: false, message: 'Server error' });
+  }
+};
+
+const blogUpdate= async (req, res) => {
+  try {
+      const { status } = req.body;
+      const blog = await Blog.findByIdAndUpdate(req.params.id, { status }, { new: true });
+      if (!blog) {
+          return res.status(404).json({ success: false, message: 'Blog not found' });
+      }
+      res.json({ success: true, message: `Blog ${status} successfully`, blog });
+  } catch (error) {
+      res.status(500).json({ success: false, message: 'Server error' });
   }
 };
 
 
-module.exports = { createBlog,getAllBlogs,blogDelete };
+module.exports = { createBlog,getAllBlogs,blogDelete,blogUpdate };

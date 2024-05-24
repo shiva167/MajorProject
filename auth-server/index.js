@@ -1,58 +1,3 @@
-// const express = require("express");
-// const dotenv = require("dotenv");
-// const mongoose = require("mongoose");
-// const imageRoute = require("./routes/image");
-// const userRoute = require("./routes/user");
-// const foodRoute = require("./routes/food");
-// const orderRoute = require("./routes/order");
-// const blogRoute = require("./routes/blog");
-
-// const cors = require("cors");
-// const app = express();
-// dotenv.config();
-// const port = process.env.PORT || 8000;
-
-// app.use(cors());
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
-
-
-// app.get("/", (req, res) => {
-//   res.send("Hello World");
-// });
-
-// // connecting DB
-
-// const connect = async () => {
-//   try {
-//     await mongoose.connect(process.env.MONGODB);
-//     console.log("Connected successfully!");
-//   } catch (error) {
-//     throw error;
-//   }
-// };
-
-// mongoose.connection.on("disconnected", () => {
-//     console.log ("disconnected");
-//     });
-//     mongoose.connection.on("connected", () => {
-//     console.log("connected");
-//     });
-//     app.use("/api/v1/all",imageRoute);
-//     app.use("/api/v1/user",userRoute);
-//     app.use("/api/v1/food",foodRoute);
-//     app.use("/api/v1/order",orderRoute);
-//     app.use("/api/v1/blog",Route);
-
-//     app.use(express.json({ limit: "3mb" }));
-
-//     app.listen(port, () => {
-//     connect();
-//     console.log(`Listening from ${port}`);
-//     });
-
-
-
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
@@ -107,8 +52,26 @@ app.use("/api/v1/food", foodRoute);
 app.use("/api/v1/order", orderRoute);
 app.use("/api/v1/blog", blogRoute);
 
+// Handle errors globally
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send({ message: 'Something broke!' });
+});
+
 // Start server
 app.listen(port, () => {
   connectDB();
   console.log(`Server listening on port ${port}`);
+});
+
+// Handle uncaught exceptions
+process.on('uncaughtException', (error) => {
+  console.error('Uncaught Exception:', error);
+  process.exit(1); // Mandatory (as per the Node.js docs)
+});
+
+// Handle unhandled promise rejections
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  process.exit(1); // Mandatory (as per the Node.js docs)
 });

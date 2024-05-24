@@ -28,6 +28,10 @@ const blogSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+      userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+      status: { type: String, enum: ['pending', 'accepted', 'rejected'], default: 'pending' },
+      createdAt: { type: Date, default: Date.now }
+
   },
   { timestamps: true }
 );
