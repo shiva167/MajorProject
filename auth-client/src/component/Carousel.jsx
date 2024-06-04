@@ -13,54 +13,28 @@ function Carousel() {
       setCurrentIndex((prevIndex) =>
         prevIndex === 4 ? 0 : prevIndex + 1
       );
-    }, 8000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative mt-14 w-full rounded-3xl h-full overflow-hidden shadow-black shadow-2xl">
+    <div className="relative mt-2 w-full rounded-3xl h-44 sm:h-60 md:h-96 lg:h-[25rem] overflow-hidden shadow-black shadow-2xl">
       <div
-        className="absolute top-0 left-0 w-full h-full flex transition-opacity ease-in-out duration-500 "
+        className="absolute top-0 left-0 w-full h-full flex transition-transform ease-in-out duration-500"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
       >
-        <div className="w-full h-full flex-none shadow-lg">
-          <img
-            src={c1img}
-            className="w-full h-full object-cover"
-            alt="Slide 1"
-          />
-        </div>
-        <div className="w-full h-full flex-none">
-          <img
-            src={c2img}
-            className="w-full h-full object-cover"
-            alt="Slide 2"
-          />
-        </div>
-        <div className="w-full h-full flex-none">
-          <img
-            src={c3img}
-            className="w-full h-full object-cover"
-            alt="Slide 3"
-          />
-        </div>
-        <div className="w-full h-full flex-none">
-          <img
-            src={c4img}
-            className="w-full h-full object-cover"
-            alt="Slide 4"
-          />
-        </div>
-        <div className="w-full h-full flex-none">
-          <img
-            src={c5img}
-            className="w-full h-full object-cover"
-            alt="Slide 5"
-          />
-        </div>
+        {[c1img, c2img, c3img, c4img, c5img].map((img, index) => (
+          <div key={index} className="w-full h-full flex-none">
+            <img
+              src={img}
+              className="w-full h-full object-cover"
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

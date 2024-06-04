@@ -27,8 +27,8 @@ const Menu = () => {
     },
     {
       id:2,
-      name: 'Chineese',
-      value: 'Chineese'
+      name: 'Chinese',
+      value: 'Chinese'
     },
     {
       id: 3,
