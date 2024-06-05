@@ -40,7 +40,8 @@ const BlogsPage = ({ curElem, setNewBlog, newBlog }) => {
             console.error('Failed to reject the blog post:', error);
         }
     };
-
+    
+    
     return (
         <div className="rounded overflow-hidden shadow-lg bg-[#FFFADC]">
             <div className="relative">
@@ -82,6 +83,8 @@ const BlogsPage = ({ curElem, setNewBlog, newBlog }) => {
                     <span className="font-bold">{new Date(curElem.createdAt).getDate()}</span>
                     <small>{new Date(curElem.createdAt).toLocaleString('default', { month: 'short' })}</small>
                 </div>
+
+ 
             </div>
             <div className="px-6 py-4">
                 <Link to={`/blog/${curElem._id}`} className="font-semibold text-lg inline-block hover:text-[#CF3032] transition duration-500 ease-in-out">

@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import BlogsPage from './BlogsPage';
 import { useUserContext } from '../../context/userContext';
+
 const baseUrl = "https://majorproject-1-t1wr.onrender.com";
 // const baseUrl = "http://localhost:8000";
 
@@ -19,13 +20,16 @@ const Blog = () => {
 
                 // Filter blogs based on user role
                 if (user?.user?.role === 'user') {
-                    blogs = blogs.filter(blog => blog.userId === user.user._id );
+                    blogs = blogs.filter(blog => blog.userId === user.user._id);
                 } else if (user?.user?.role === 'admin') {
                     blogs = blogs.filter(blog => blog.status !== 'rejected' || blog.userId === user.user._id);
                 } else {
                     // For non-logged-in users, show only accepted blogs
                     blogs = blogs.filter(blog => blog.status === 'accepted');
                 }
+
+                // Sort blogs by most recent date in descending order
+                blogs = blogs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
                 setNewBlog(blogs);
             }
