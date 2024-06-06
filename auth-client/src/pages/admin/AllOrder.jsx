@@ -135,7 +135,7 @@ const OrderFoods = ({ order }) => {
             order?.items?.map((item) => <div className="flex flex-col justify-between ml-4
     flex-grow">
               <div>
-                <img className="h-20" src={item?.food.foodImage} alt="" />
+                <img className="h-20" src={item?.food?.foodImage} alt="" />
               </div>
               <span className="font-bold text-sm">{item?.food?.name}</span>
               <span className="flex items-center space-x-4">
