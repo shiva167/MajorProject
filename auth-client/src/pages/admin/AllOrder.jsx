@@ -47,7 +47,7 @@ const AllOrder = () => {
           <div className="container mx-auto py-6">
             <div className="w-full bg-white px-10 py-5 text-black rounded-md">
               <div className="flex justify-between border-b pb-8">
-                <h1 className="font-semibold text- text-[#f54748]">My Orders</h1>
+                <h1 className="font-semibold text- text-[#f54748]">All Orders</h1>
               </div>
               <div className="flex mt-10 mb-5">
                 <h3 className="font-semibold text-gray-900 text-1xl uppercase w-4/5">
